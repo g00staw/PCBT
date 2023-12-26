@@ -525,14 +525,18 @@ img{
     margin-top: 10;
 }
 
-.plus .categoryPointContainer{
-    border-style: solid;
+.categoryPointContainer{
+
     margin-top: 10px;
     margin-bottom: 10px;
-    border-color: #00b35c;
     border-radius: 20px;
     max-width: 70%;
     transition: 1s;
+}
+
+.plus .categoryPointContainer{
+    border-style: solid;
+    border-color: #00b35c;
 }
 
 .sectionSubTitle{
@@ -546,16 +550,20 @@ img{
     color: #00b35c;
 }
 
-.plus .categoryPointContainer:hover{
+.plus .categoryPointContainer{
     box-shadow: inset rgba(109, 255, 180, 0.756) 0px 0px 30px -10px;
-    background-color: rgba(0, 255, 140, 0.026);
+    background-color: rgba(0, 255, 140, 0.005);
 
+}
+
+.categoryPoint2 .point-title{
+    margin-bottom: 25px;
+    max-width: 70%;
 }
 
 .plus .categoryPoint2 .point-title{
     color: #00b35c;
-    margin-bottom: 25px;
-    max-width: 70%;
+
 }
 
 .minus .categoryPoint2 .point-title{
@@ -567,7 +575,10 @@ img{
 }
 
 .minus .categoryPointContainer{
+    border-style: solid;
     border-color: #db2727;
+    box-shadow: inset rgb(207, 11, 11) 0px 0px 30px -10px;
+    background-color: rgba(207, 11, 11, 0.067);
 }
 
 .categoryPoint2{
