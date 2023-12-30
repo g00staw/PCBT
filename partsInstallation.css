@@ -8,7 +8,7 @@
 html {
     font-size: 15px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(145, 250, 255);
+    background-color: rgb(0, 0, 0);
 
 }
 
@@ -22,3 +22,310 @@ a {
     margin: 0 auto;
     padding: 0 2.2rem;
 }
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    width: 100%;
+    height: 4.7rem;
+    background-color: rgba(0, 0, 0, .75);
+    backdrop-filter: blur(2rem);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.nav-list-mobile {
+    display: none;
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    transition: opacity .5s;
+}
+
+.nav-link-hardwareselection{
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    padding-bottom: 3px;
+    transition: opacity .5s;
+    background-color: rgba(160, 160, 160, 0.4);
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    opacity: .7;
+}
+
+.nav-link-pcbt {
+    width: 2.6rem;
+    height: 5.4rem;
+    background: url("images/icons/pcbt50.png") center no-repeat;
+}
+.title {
+    display: flex;
+    align-items:last baseline;
+    color: rgba(255, 255, 255);
+    text-align: left;
+    padding-top: 5.5rem;
+    backdrop-filter: blur(0.05rem);
+    border-radius: 50px;
+    height: 800px;
+    background-size: cover;
+    max-width: 1400px;
+}
+
+.title-heading {
+    font-size: 2.6rem;
+    line-height: 1.07;
+    letter-spacing: 0.15rem;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /* Dodałem wypełnienie, aby ramka miała więcej miejsca do zaokrąglenia */
+    display: inline-block;
+    /* Element inline-block, aby dopasować się do zawartości */
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    background-color: rgb(0, 0, 0, 0.7);
+    animation: typing 1s steps(30, end) forwards, blinking 2s infinite;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 35%
+    }
+}
+
+@keyframes blinking {
+    0% {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: whitesmoke
+    }
+
+    100% {
+        border-color: transparent
+    }
+    
+}
+
+.subTitleCon {
+    font-size: 28px;
+    margin-top: .6rem;
+    letter-spacing: .015rem;
+    font-weight: 350;
+    color: white;
+    max-width: 300px;
+    background-color: rgb(0, 0, 0, 0.7);
+    animation: typing 1s steps(30, end) forwards, blinking 2s infinite;
+  }
+
+.short-link {
+    font-size: 1.15rem;
+    margin-top: .6rem;
+    letter-spacing: .015rem;
+    font-weight: 350;
+    color: rgb(189, 178, 255);
+    margin-bottom: 3%;
+    bottom: 0;
+}
+
+.partsInstallation{
+    background: url("images/hero/partsInstalling/andrey-matveev-eSYHR2dBqSo-unsplash.jpg");
+    transition: 2s;
+}
+
+.hero {
+    height: 100%;
+    background-size: 100%;
+    background-position-x: 50%;
+    background-position-y: 40%;
+    background-repeat: no-repeat;
+    border-bottom-style: solid; /* Use border-bottom-style instead of border-style */
+    border-bottom-width: 5px; /* Use border-bottom-width instead of border-width */
+    border-image: linear-gradient(90deg, rgb(145, 250, 255) 0%, rgb(27, 202, 255) 39%, rgb(0, 51, 234) 60%, rgb(145, 250, 255) 100%);
+    border-image-repeat: round;
+    border-image-slice: 1;
+    padding-left: 120px;
+}
+
+
+.partsInstallation:hover{
+    background-size: 105%;
+}
+
+.boxForTable{
+    padding-bottom: 10px;
+}
+
+.tableOfContent{
+    margin-top: 10px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.913);
+    letter-spacing: 3px;
+    border-radius: 20px;
+}
+.tableOfContent p{
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+
+
+.tableOfContent li{
+    list-style-type: none;
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 25px;
+    transition: 0.5s;
+    padding-bottom: 15px;
+}
+.tableOfContent li:hover{
+    color: rgb(131, 131, 255);
+    transform: scale(1.1);
+    padding-left: 120px;
+}
+
+hr{
+    margin-top: 5%;
+}
+
+.point{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.spoint-container{
+    display: flex;
+    background: url(/images/hero/partsInstalling/clu-soh-oga9Xg0KVnU-unsplash.jpg);
+    background-size: 120%;
+    background-position-x: 30%;
+    background-position-y: 50%;
+}
+
+.processor{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+h2{
+    font-size: 50px;
+    color: white;
+}
+
+.point-div{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.point-description:first-child{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.number{
+    font-size: 40px;
+    color: cornflowerblue;
+    font-weight: 500;
+    padding-right: 20px;
+    top: 0%;
+}
+
+.processor h2{
+    margin-bottom: 60px;
+}
+
+.point-description{
+    font-size: 25px;
+    color:rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    text-align: left;
+    align-items: center;
+}
+
+
+
+.points-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.point:hover{
+    box-shadow: rgb(69, 107, 149) 0px 20px 50px -10px;
+}
+
+.processor iframe{
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgb(69, 107, 149) 0px 20px 30px -10px;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    margin-top: 10%;
+    right: 10%;
+
+}
+
+iframe{
+    transition: 1s;
+}
+
+iframe:hover{
+    scale: 1.1;
+}
+
+.video .point-description{
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.section-title {
+    background-image: linear-gradient(to right, #0077ff, #00e1ff, #00fff2, #00ffff, #0000ff, #ff00ff);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
