@@ -234,21 +234,25 @@ hr{
     transition: 1s;
 }
 
+.processor .point-div{
+    display: flex;
+    padding: 20px;
+}
+
 h2{
     font-size: 50px;
     color: white;
 }
 
-.point-div{
-    display: flex;
-    margin-bottom: 20px;
-}
-
-
 .point-description:first-child{
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 40px;
+}
+
+.point-div img{
+    opacity: 0.85;
+    margin-left: 10px;
 }
 
 .number{
@@ -348,7 +352,7 @@ iframe:hover{
     }
   }
 
-.graphic-card{
+.mobo{
     display: flex;
     flex-direction: column;
     transition: 1s;
@@ -356,41 +360,80 @@ iframe:hover{
     padding: 50px;
 }
 
-.graphic-card .point-div{
-    max-width: 60%;
-    padding: 50px;
-    margin: 20px;
-    align-items: center;
-}
 
-.graphic-card .point-container{
+.mobo .point-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.graphic-card .point-div{
-    border: 1px solid rgba(49, 190, 255, 0.685);
-    transform: skew(-20deg);
-    width: 60%;
-    transition: .8s;
-    background-color: rgba(0, 0, 0, .9);
-}
-
-.graphic-card p{
+.mobo p{
     transform: skew(20deg);
 }
 
-.graphic-card .point-div:hover{
+.mobo .point-div:hover{
     scale: 1.05;
     box-shadow: inset rgb(69, 107, 149) 0px 20px 30px -10px;
-    background-color: rgba(0, 164, 234, 0.055);
+    background-color: rgba(0, 6, 8, 0.95);
 }
 
-.graphic-card .point-container{
-    background: url(/images/hero/partsInstalling/scott-webb-hzjuf7uk4Ls-unsplash.jpg);
+.mobo .number{
+    color: #001948;
+    margin-left: 1%;
+}
+
+.mobo .point-description{
+    margin-left: 30px;
+}
+
+.mobo .point-div{
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 60%;
+    padding: 50px;
+    margin: 20px;
+    align-items: center;
+    transform: skew(-20deg);
+    width: 60%;
+    transition: .8s;
+    
+    background-color: rgb(0, 6, 8);
+    --borderWidth: 1px;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+.mobo .point-div:after{
+    background-color: rgb(0, 0, 0, 0.7);
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(120px + var(--borderWidth) * 2);
+    background: linear-gradient(144deg,#AF40FF, #5B42F3,#00DDEB, #5B42F3, #AF40FF);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 6s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+    	background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.mobo .point-container{
+    background: url("images/hero/partsInstalling/scott-webb-hzjuf7uk4Ls-unsplash.jpg");
     background-repeat: no-repeat;
     background-position-x: 50%;
-    background-size: 130%;
+    background-size: 200%;
 }
