@@ -216,6 +216,7 @@ hr{
 .point{
     margin-left: 5%;
     margin-right: 5%;
+    transition: 1s;
 }
 
 .spoint-container{
@@ -230,6 +231,7 @@ hr{
     display: flex;
     flex-direction: column;
     padding: 50px;
+    transition: 1s;
 }
 
 h2{
@@ -269,8 +271,6 @@ h2{
     align-items: center;
 }
 
-
-
 .points-container{
     display: flex;
     flex-direction: column;
@@ -278,13 +278,31 @@ h2{
 }
 
 .point:hover{
-    box-shadow: rgb(69, 107, 149) 0px 20px 50px -10px;
+    animation: boxShadowAnimation 5s infinite;
+    scale: 1.01;
+}
+
+@keyframes boxShadowAnimation {
+    0%{
+        box-shadow: rgb(69, 107, 149) 0px 20px 50px -10px;
+    }
+    50%{
+        box-shadow: rgb(93, 155, 226) 0px 30px 50px -10px;
+    }
+    100%{
+        box-shadow: rgb(69, 107, 149) 0px 20px 50px -10px;
+    }
+}
+
+.processor{
+    border-radius: 10px;
 }
 
 .processor iframe{
     align-items: center;
     justify-content: center;
     box-shadow: rgb(69, 107, 149) 0px 20px 30px -10px;
+    border-radius: 10px;
 }
 
 .video{
@@ -316,7 +334,7 @@ iframe:hover{
     -webkit-background-clip: text;
     color: transparent;
     animation: gradient 15s ease infinite;
-  }
+}
   
   @keyframes gradient {
     0% {
@@ -329,3 +347,42 @@ iframe:hover{
       background-position: 0% 50%;
     }
   }
+
+.graphic-card{
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+.graphic-card .point-div{
+    max-width: 60%;
+    padding: 50px;
+    margin: 20px;
+    align-items: center;
+}
+
+.graphic-card .point-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphic-card .point-div{
+    border: 1px solid rgba(49, 190, 255, 0.685);
+    transform: skew(-20deg);
+    width: 60%;
+    transition: .8s;
+}
+
+.graphic-card p{
+    transform: skew(20deg);
+}
+
+.graphic-card .point-div:hover{
+    scale: 1.05;
+    box-shadow: inset rgb(69, 107, 149) 0px 20px 30px -10px;
+    background-color: rgba(0, 164, 234, 0.055);
+}
