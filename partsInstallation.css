@@ -221,11 +221,11 @@ hr{
 
 .spoint-container{
     display: flex;
-    background: url(/images/hero/partsInstalling/clu-soh-oga9Xg0KVnU-unsplash.jpg);
+    background: url("images/hero/partsInstalling/clu-soh-oga9Xg0KVnU-unsplash.jpg");
     background-size: 120%;
     background-position-x: 30%;
     background-position-y: 50%;
-}
+}   
 
 .processor{
     display: flex;
@@ -375,6 +375,7 @@ iframe:hover{
     transform: skew(-20deg);
     width: 60%;
     transition: .8s;
+    background-color: rgba(0, 0, 0, .9);
 }
 
 .graphic-card p{
@@ -385,4 +386,11 @@ iframe:hover{
     scale: 1.05;
     box-shadow: inset rgb(69, 107, 149) 0px 20px 30px -10px;
     background-color: rgba(0, 164, 234, 0.055);
+}
+
+.graphic-card .point-container{
+    background: url(/images/hero/partsInstalling/scott-webb-hzjuf7uk4Ls-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: 130%;
 }
