@@ -53,7 +53,7 @@ header {
     transition: opacity .5s;
 }
 
-.nav-link-hardwareselection{
+.nav-link-partsInstallation{
     font-size: 1.4rem;
     color: #fff;
     padding: 0 1rem;
@@ -436,4 +436,304 @@ iframe:hover{
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-size: 200%;
+}
+
+i {
+    margin-top: 7%;
+    margin-left: 5%;
+	position: relative;
+	display: block;
+	width: 768px;
+	height: 432px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+i:before, i:after {
+	content: '⥪';
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	z-index: 2;
+	width: 2rem;
+	height: 2rem;
+	background: dodgerblue;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+i:after {
+	content: '⥭';
+	left: auto;
+	right: 1rem;
+}
+
+/* I haven't found a way for IE and Edge to let me style inputs that way */
+input {
+	appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translateX(100%);
+	transition: transform ease-in-out 400ms;
+	z-index: 1;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:after {
+	content: attr(title);
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: .5rem;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+input:not(checked):before {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	top: 50%;
+	left: calc(-100% + 1rem);
+}
+
+input:checked:before {
+	display: none;
+	left: 1rem;
+}
+
+input:checked {
+	transform: translateX(0);
+	pointer-event: none;
+	z-index: 0;
+	box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);
+}
+
+input:checked + input:before {
+	left: -3rem;
+}
+
+input:checked + input ~ input:before {
+	display: none;
+}
+
+.graphic{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.graphic .point-div{
+    display: flex;
+    padding: 20px;
+}
+
+.graphic .spoint-container{
+    background: url("images/hero/partsInstalling/aron-visuals-bZZp1PmHI0E-unsplash.jpg");
+    background-size: 70%;
+    background-position-x: 130%;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+}
+
+.graphic h2{
+    margin-bottom: 60px;
+}
+
+.memory{
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    margin-top: 100px;
+    padding: 50px;
+}
+
+
+.memory .point-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+    max-width: 1000px;
+}
+
+.memory p{
+    transform: skew(20deg);
+}
+
+.memory .point-div:hover{
+    scale: 1.05;
+    box-shadow: inset rgb(69, 107, 149) 0px 20px 30px -10px;
+    background-color: rgba(0, 6, 8, 0.95);
+}
+
+.memory .number{
+    color: #001948;
+    margin-left: 1%;
+}
+
+.memory .point-description{
+    margin-left: 40px;
+}
+
+.memory .point-div{
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 70%;
+    min-width: 70%;
+    padding: 50px;
+    margin: 20px;
+    align-items: center;
+    transform: skew(-20deg);
+    transition: .8s;
+    
+    background-color: rgb(0, 19, 25);
+    --borderWidth: 1px;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+.memory .point-div:after{
+    background-color: rgba(66, 65, 65, 0.9);
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(120px + var(--borderWidth) * 2);
+    background: linear-gradient(144deg,#AF40FF, #5B42F3,#00DDEB, #5B42F3, #AF40FF);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 6s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.memory h2{
+    padding-bottom: 20px;
+}
+
+.memory .s-title{
+    font-size: 35px;
+    color: rgba(106, 238, 255, 0.85);
+}
+
+.category-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.memory .point-container:first-child{
+    border-right-style: solid;
+    border-right-color: rgba(1, 82, 152, 0.3);
+    border-right-width: 5px
+}
+
+.memory .point-container:hover{
+    background-color: rgba(0, 109, 131, 0.14);
+}
+
+.end .video{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative;
+    margin-top: 0px;
+    transition: 1s;
+    margin-left: 20%;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    transition: 1s;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.end iframe{
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgb(69, 107, 149) 0px 20px 30px -10px;
+    border-radius: 10px;
+}
+
+footer{
+    background: rgb(29, 29, 29);
+    padding:10px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:12.5px;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:600px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
 }
