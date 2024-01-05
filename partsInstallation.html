@@ -39,9 +39,6 @@
                         <a href="partsInstallation.html" class="nav-link nav-link-partsInstallation">Instalacja podzespołów</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#.html" class="nav-link">Instalacja systemu</a>
-                    </li>
-                    <li class="nav-item">
                         <a href="#.html" class="nav-link">Overclocking</a>
                     </li>
                     <li class="nav-item">
@@ -67,20 +64,18 @@
             <div class="tableOfContent">
                 <p>Spis treści</p>
                 <ul>
-                    <li>Wprowadzenie</li>
-                    <li>Karta graficzna</li>
-                    <li>Procesor</li>
-                    <li>Chłodzenie procesora</li>
-                    <li>Pamięć RAM</li>
-                    <li>Płyta główna</li>
-                    <li>Obudowa</li>
-                    <li>Dyski</li>
+                    <li><a href="#1">Procesor & chłodzenie</a></li>
+                    <li><a href="#2">Płyta główna</a></li>
+                    <li><a href="#3">Karta graficzna</a></li>
+                    <li><a href="#4">Dyski & Pamięć RAM</a></li>
+                    <li><a href="#5">Zasilacz & okablowanie</a></li>
+                    <li><a href="#6">Zakończenie</a></li>
                 </ul>
             </div>
             <hr>
         </div>
     </section>
-    <section class="point processor">
+    <section class="point processor" id="1">
         <h2 class="section-title">Procesor & chłodzenie</h2>
         <div class="spoint-container">
             <div class="points-container">
@@ -124,11 +119,11 @@
             </div>
             <div class="video">
                 <p class="point-description">Oto przykładowy film instruktażowy.</p>
-                <iframe width="640" height="360" src="https://youtube.com/embed/BQ308X5_xn4?si=MUIB8Yg17P4Fcj2b"></iframe>
+                <iframe src="https://youtube.com/embed/BQ308X5_xn4?si=MUIB8Yg17P4Fcj2b"></iframe>
             </div>
         </div>
     </section>
-    <section class="point mobo">
+    <section class="point mobo" id="2">
         <h2 class="section-title">Płyta główna</h2>
         <div class="point-container">
             <div class="point-div">
@@ -165,7 +160,7 @@
             </div>
         </div>
     </section>
-    <section class="point graphic">
+    <section class="point graphic" id="3">
         <h2 class="section-title">Karta graficzna</h2>
         <div class="spoint-container">
             <div class="points-container">
@@ -198,7 +193,7 @@
             </i>
         </div>
     </section>
-    <section class="point memory">
+    <section class="point memory" id="4">
         <h2 class="section-title">Dyski & Pamięć RAM</h2>
         <div class="category-container">
             <div class="point-container">
@@ -264,7 +259,7 @@
             </div>
         </div>
     </section>
-    <section class="point graphic">
+    <section class="point power" id="5">
         <h2 class="section-title">Zasilacz & okablowanie</h2>
         <div class="spoint-container">
             <div class="points-container">
@@ -282,14 +277,83 @@
                     <p class="point-description">Przymocuj kable do obudowy za pomocą opasek błyskawicznych lub pasków na rzepy, aby zapewnić porządek w obudowie.</p><br>
                 </div>
             </div>
-            <i>
-                <input type="radio" name="s" style="background-image: url('images/hero/partsInstalling/perfect-cable-management.jpg');" title="Idealnie poprowadzone kable z tyłu obudowy">
-                <input checked type="radio" name="s" style="background-image: url('images/hero/partsInstalling/cable-management-nside.jpg');" title="Popowadzenie kabli w środku obudowy">
-                <input type="radio" name="s" style="background-image: url('images/hero/partsInstalling/onur-binay-z3MP5DDiEME-unsplash.jpg');" title="">
-            </i>
+            <div class="media-container">
+                <h3>Podział kabli które bedą podpięte to płyty głównej</h3>
+                <div class="table-container">
+
+                    <table class="tableOfWires">
+                        <tr>
+                            <th>Kabel</th>
+                            <th>Opis</th>
+                            <th>Zdjęcie</th>
+                        </tr>
+                        <tr>
+                            <td>ATX 24-pin (24-pinowy złączalny zasilacz)</td>
+                            <td>Ten kabel dostarcza główną moc zasilania do płyty głównej. Składa się z 24 pinów i jest podstawowym zasilaniem dla większości komputerów stacjonarnych. Obejmuje zarówno napięcia dla zasilania procesora, pamięci RAM, jak i pozostałych komponentów na płycie głównej.</td>
+                            <td><img src="images/hero/partsInstalling/conector-atx-24-pines.png"></td>
+                        </tr>
+                          <tr>
+                            <td>ATX 8-pin / CPU Power (8-pinowy złączalny zasilacz CPU)</td>
+                            <td>Ten kabel dostarcza dodatkową moc zasilania dla procesora. W przypadku niektórych płyt głównych może występować w postaci 4-pinowego złącza, ale wiele nowoczesnych procesorów i płyt głównych wymaga 8-pinowego zasilania CPU.</td>
+                            <td><img src="images/hero/partsInstalling/cpu-power.jpg"></td>
+                          </tr>
+                          <tr>
+                            <td>PCIe (zasilanie karty graficznej)</td>
+                            <td>Karty graficzne wymagają dodatkowego zasilania, które dostarcza kabel PCIe. Dostępne są różne wersje tego kabla, takie jak PCIe 6-pin, PCIe 8-pin, a także kombinacje, takie jak 6+2-pin, które mogą być używane do różnych kart graficznych.</td>
+                            <td><img src="images/hero/partsInstalling/pci-e.jpg"></td>
+                        </tr>
+                          <tr>
+                            <td>SATA (zasilanie i transfer danych dla urządzeń pamięci masowej)</td>
+                            <td>Kabel SATA jest używany do zasilania i przesyłania danych pomiędzy płytą główną a urządzeniami pamięci masowej, takimi jak dyski twarde, SSD czy napędy optyczne.</td>
+                            <td><img src="images/hero/partsInstalling/sata-wire.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>Molex (starsze urządzenia peryferyjne)</td>
+                            <td>Kablowanie Molex jest starszym standardem, który był powszechnie używany do zasilania starszych urządzeń peryferyjnych, takich jak napędy optyczne, wentylatory, czy inne dodatkowe komponenty.</td>
+                            <td><img src="images/hero/partsInstalling/molex-wire.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>USB (Universal Serial Bus)</td>
+                            <td>Kable USB służą do łączenia różnych urządzeń peryferyjnych z komputerem, takich jak klawiatury, myszy, drukarki, itp.</td>
+                            <td><img src="images/hero/partsInstalling/usb-mobo-wire.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>HD Audio (Audio Front Panel)</td>
+                            <td>Kabel HD Audio łączy przedni panel obudowy z płytą główną, umożliwiając podłączenie gniazd słuchawkowych i mikrofonowych dostępnych na przednim panelu obudowy.</td>
+                            <td><img src="images/hero/partsInstalling/hd-audio-wire.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>Wentylatory (CPU Fan, Case Fan)</td>
+                            <td>Kable od wentylatorów służą do zasilania i kontrolowania obrotów wentylatorów. W przypadku wentylatora procesora (CPU Fan) często łączony jest z odpowiednim złączem na płycie głównej, umożliwiając kontrolę obrotów w zależności od temperatury procesora. Wentylatory obudowy mogą być również podłączane do złącz na płycie głównej lub do kontrolera wentylatorów, jeśli obudowa posiada taki element.</td>
+                            <td><img src="images/hero/partsInstalling/fan-wire.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>Kable od obudowy (Power Switch, Reset Switch, HDD LED, Power LED)</td>
+                            <td>Kable te łączą przyciski zasilania, resetu, diodę sygnalizacyjną pracy dysku twardego (HDD LED) oraz diodę sygnalizującą zasilanie (Power LED) z odpowiednimi złączami na płycie głównej. Umożliwiają one obsługę przycisków na przednim panelu obudowy oraz informują o stanie pracy komputera.</td>
+                            <td><img src="images/hero/partsInstalling/fan-wire.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>USB Front Panel (USB 2.0, USB 3.0)</td>
+                            <td>Kablowanie USB Front Panel łączy porty USB na przednim panelu obudowy z odpowiednimi złączami na płycie głównej, umożliwiając podłączenie urządzeń USB do komputera.</td>
+                            <td><img src="images/hero/partsInstalling/case-wires.jpg"></td>
+                        </tr>
+                        <tr>
+                            <td>SATA Power (zasilanie urządzeń pamięci masowej)</td>
+                            <td>Podobnie jak kabel SATA, ale służy jedynie do zasilania urządzeń pamięci masowej, takich jak dyski twarde czy SSD.</td>
+                            <td><img src="images/hero/partsInstalling/sata-power.jpg"></td>
+                        </tr>
+                    </table>
+                </div>
+                <i>
+                    <input type="radio" name="s" style="background-image: url('images/hero/partsInstalling/perfect-cable-management.jpg');" title="Idealnie poprowadzone kable z tyłu obudowy">
+                    <input checked type="radio" name="s" style="background-image: url('images/hero/partsInstalling/cable-management-nside.jpg');" title="Popowadzenie kabli w środku obudowy">
+                    <input type="radio" name="s" style="background-image: url('images/hero/partsInstalling/onur-binay-z3MP5DDiEME-unsplash.jpg');" title="">
+                </i>
+            </div>
+
         </div>
     </section>
-    <section class="point end">
+    <section class="point end" id="6">
         <h2 class="section-title">Zakończenie</h2>
         <div class="spoint-container">
             <div class="points-container">
@@ -297,12 +361,12 @@
             </div>
             <div class="video">
                 <p class="point-description">Oto przykładowy film instruktażowy.</p>
-                <iframe width="640" height="320" src="https://youtube.com/embed/FCDw7zopnDg?si=lJ9N8fFdK2-l-WrW"></iframe>
+                <iframe src="https://youtube.com/embed/FCDw7zopnDg?si=lJ9N8fFdK2-l-WrW"></iframe>
             </div>
         </div>
     </section>
     <footer>
-        <div class="footer">         
+        <div class="footer">
             <div class="row">
                 <ul>
                     <li>
