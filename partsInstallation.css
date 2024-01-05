@@ -868,6 +868,18 @@ input:checked + input ~ input:before {
 
 @media only screen and (max-width: 962px){
 
+    .title-heading{
+        font-size: 1.75rem;
+    }
+
+    .subTitleCon{
+        font-size: 1.5rem;
+    }
+
+    .title{
+        height: 150px;
+    }
+
     .point{
         margin-left: 2%;
         margin-right: 2%;
@@ -875,6 +887,8 @@ input:checked + input ~ input:before {
 
     .point h2{
         font-size: 40px;
+        padding-left: 30px;
+        padding-top: 20px;
     }
 
     .point .point-description{
@@ -893,6 +907,11 @@ input:checked + input ~ input:before {
 
     .processor:hover{
         scale: none;
+    }
+
+    iframe{
+        max-width: 350px;
+        max-height: 200px;
     }
 }
 
