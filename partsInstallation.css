@@ -867,8 +867,32 @@ input:checked + input ~ input:before {
 /* -> mobile version */
 
 @media only screen and (max-width: 962px){
+
+    .point{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .point h2{
+        font-size: 40px;
+    }
+
     .point .point-description{
         font-size: 16px;
+        max-width: 300px;
+    }
+    .point .points-container{
+        min-width: 400px;
+        display: flex;
+        align-items: center;
+    }
+
+    .processor{
+        padding: 0;
+    }
+
+    .processor:hover{
+        scale: none;
     }
 }
 
