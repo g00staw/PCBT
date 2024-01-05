@@ -913,6 +913,87 @@ input:checked + input ~ input:before {
         max-width: 350px;
         max-height: 200px;
     }
+
+    .video{
+        margin-left: 0px;
+    }
+
+    .video .point-description{
+        margin: 10px;
+    }
+
+    .mobo{
+        padding: 0;
+    }
+
+    .mobo h2{
+        margin-bottom: 40px;
+    }
+
+    .mobo .point-container{
+        background: none;
+    }
+
+    .mobo .point-div{
+        box-shadow: inset rgb(69, 107, 149) 0px 20px 30px -25px;
+    }
+
+    .mobo .point-div{
+        display: flex;
+        margin-bottom: 20px;
+        max-width: 60%;
+        padding: 50px;
+        padding-left: 10px;
+        margin: 20px;
+        align-items: center;
+        transform: skew(-20deg);
+        width: 100%;
+        transition: .8s;
+        
+        background-color: rgb(0, 6, 8);
+        --borderWidth: 1px;
+        position: relative;
+        border-radius: var(--borderWidth);
+    }
+    
+    .mobo .point-div:after{
+        background-color: rgb(0, 0, 0, 0.7);
+        content: '';
+        position: absolute;
+        top: calc(-1 * var(--borderWidth));
+        left: calc(-1 * var(--borderWidth));
+        height: calc(100% + var(--borderWidth) * 2);
+        width: calc(50px + var(--borderWidth) * 2);
+        background: linear-gradient(144deg,#AF40FF, #5B42F3,#00DDEB, #5B42F3, #AF40FF);
+        border-radius: calc(2 * var(--borderWidth));
+        z-index: -1;
+        animation: animatedgradient 6s ease alternate infinite;
+        background-size: 300% 300%;
+    }
+
+    .mobo .point-description{
+        margin-left: 10px;
+        min-width: 200px;
+    }
+
+    .graphic{
+        padding: 0;
+    }
+
+    .graphic .point-container{
+        align-items: center;
+    }
+
+    .graphic .point-div{
+        align-self: flex-start;
+    }
+
+    .graphic i{
+        width: 90%;
+        margin-bottom: 20px;
+        margin-left: 0%;
+    }
+
 }
 
 
