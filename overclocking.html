@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PCBT - Overclocking</title>
+    <link rel="stylesheet" href="overclocking.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <spanc class="line line-top"></spanc>
+                            <spanc class="line line-bottom"></spanc>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-bag"></a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-mobile -->
+    
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hardwareSelection.html" class="nav-link nav-link-hardwareselection">Dobór komponentów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partsInstallation.html" class="nav-link nav-link-partsInstallation">Instalacja podzespołów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#.html" class="nav-link">Overclocking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#.html" class="nav-link">Undervolting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#.html" class="nav-link">Serwisowanie</a>
+                    </li>
+                </ul>
+                <!-- /.nav-list nav-list-larger -->
+            </nav>
+        </div>
+    </header>
+    <script src="main.js"></script>
+    <div class="back-to-top-scroll-button"><a href="#titleheading">▲</a></div>
+    <section class="hero partsInstallation">
+        <div class="title-container">
+            <div class="title">
+                <h2 class="title-heading" id="titleheading">Overclocking</h2>
+            </div>
+            <p class="subTitleCon">Wprowadzenie i wskazówki</p>
+            <div class="effect-container">
+                <div class="circle-container">
+                    <svg>
+                        <circle class="bg" cx="57" cy="57" r="52" />
+                        <circle class="meter-1" cx="57" cy="57" r="52" />
+                        <p class="circ-description">Taktowanie rdzenia</p>
+                        <p class="freq"> MHz</a>
+                    </svg>
+                </div>
+                <div class="circle-container">
+                    <svg>
+                        <circle class="bg" cx="57   " cy="57" r="52" />
+                        <circle class="meter-2" cx="57" cy="57" r="52" />
+                        <p class="circ-description">Temperatura</p>
+                        <p class="temp"> °C</a>
+                    </svg>
+                </div>
+                <div class="circle-container">
+                    <svg>
+                        <circle class="bg" cx="57" cy="57" r="52" />
+                        <circle class="meter-3" cx="57" cy="57" r="52" />
+                        <p class="circ-description">Prędkość wentylatorów</p>
+                        <p class="fan"> %</a>
+                    </svg>
+                </div>
+            </div>
+        </div>
+           
+    </section>
+    <section class="first-slide">
+        <h2 class="section-title">Wprowadzenie</h2>
+        <p class="point-description">Overclocking to proces zwiększania taktowania podzespołów komputera ponad specyfikację zalecaną przez producenta . Dzięki temu, że podzespoły pracują szybciej, komputer może wykonywać więcej operacji na sekundę, co zwiększa jego wydajność. Jednakże, podkręcanie podzespołów może prowadzić do przegrzania sprzętu i skrócenia jego żywotności.
+
+            Podczas overclockingu, zwiększamy częstotliwość taktowania procesora, karty graficznej lub pamięci RAM. Wymaga to zmiany ustawień BIOS-u lub oprogramowania dostarczanego przez producenta, takiego jak np. MSI Afterburner.
+        
+            Warto jednak pamiętać, że overclocking jest procesem ryzykownym i może prowadzić do uszkodzenia sprzętu. Dlatego przed podjęciem decyzji o podkręcaniu swojego komputera, warto dokładnie zapoznać się z instrukcjami producenta i zacząć od niewielkich zmian.</p>
+    </section>
+    <section class="slideA">
+        <h1 class="sectionTitle">Karta graficzna</h1>
+        <div class="slideContainer">
+            <p class="slidesContent">Podkręcanie karty graficznej jest bardziej skomplikowane niż w przypadku procesora, ponieważ liczy się nie tylko częstotliwość układu graficznego (GPU), ale też pamięci wideo (VRAM). Oba parametry mają różne przełożenie na wydajność w różnych modelach, więc warto zwrócić uwagę na oba. Zaleca się testowanie wydajności i szukanie optymalnych ustawień.</p>
+            <img class="slideImage" src="images/hero/overclocking/msi-afterburner.jpg">
+        </div>
+        <div class="sectionContainer">
+            <h2 class="sectionTitle2">Jak podkręcić kartę?</h2>
+            <div class="pointsContainer">
+                <div class="point">
+                    <h2 class="point-title">Oprogramowanie</h2>
+                    <p class="pointDescription">Jeśli chcesz podkręcić swoją kartę graficzną, 
+                        najlepiej wykorzystać do tego aplikację <span class="important">MSI Afterburner</span>. Jest to uniwersalne narzędzie, które działa nie tylko z kartami MSI, ale także z kartami innych producentów. Program wyróżnia się przejrzystym interfejsem i prostą obsługą. Włączenie opcji “Startup” pozwoli załadować zmienione ustawienia już przy starcie systemu.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Jak podkręcać kartę?</h2>
+                    <p class="pointDescription">Podczas podkręcania karty graficznej, zwiększamy częstotliwość taktowania układu graficznego - <span class="important">GPU</span> i pamięci wideo - <span class="important"> VRAM</span>.
+                         Zaleca się zwiększenie częstotliwości taktowania procesora graficznego <span class="important"> o 30-50 MHz i sprawdzenie stabilności wartości </span>. 
+                         Jeśli wartość jest stabilna, można zwiększyć częstotliwość taktowania procesora graficznego o kolejne <span class="important">10-20 MHz</span>, 
+                         aż do uzyskania najwyższej stabilnej wartości.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Power limit</h2>
+                    <p class="pointDescription">Zwiększenie limitu mocy - <span class="important">Power Limit</span> pozwoli poprawić osiągi karty, ale przekłada się na wyższy pobór energii i wyższe temperatury, co wpłynie na głośniejszą pracę chłodzenia. Warto eksperymentować z tym ustawieniem, np. na początek zwiększyć limit mocy o <span class="important">5-10%</span> i sprawdzić jaki ma to wpływ na wydajność/temperaturę.
+
+                        Bardziej zaawansowani użytkownicy mogą także pokusić się o <span class="important">podbicie napięcia</span>, funkcję trzeba jednak odblokować w opcjach - pozycja Unlock voltage control i Unlock voltage monitoring. Podobnie jak w przypadku zwiększenia limitu mocy, wyższe napięcie pozwoli poprawić stabilność, ale wpłynie na wyższy pobór mocy, wyższe temperatury i głośniejszą pracę chłodzenia.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Memory clock</h2>
+                    <p class="pointDescription">Polecamy podnieść taktowanie o <span class="important">50 - 100 MHz</span> i sprawdzić czy przy takiej wartości karta pracuje stabilnie, później można je podniesić w krokach o kolejne 50 MHz.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Test stabliności</h2>
+                    <p class="pointDescription">Uruchomiony test np. Furmark, pozostawiamy na <span class="important">godzinę lub dłużej</span>, monitorując temperatury w MSI Afterburner, aby nie przekraczały <span class="important">95-100 stopni Celsjusza</span>, powyżej tego limitu karta może "ucinać" zegary oraz obniżać swoją wydajność.
+                        Jeżeli komputer pracuje stabilnie, nie pojawiają się przekłamania w wyświetlanym obrazie, a komputer się nie zawiesza lub nie restartuje, a temperatury mieszczą się w normie, możemy uznać, że uzyskane wartości są stabilne. W przeciwnym wypadku musimy nieco zmniejszyć zegary i/lub podnieść limit mocy.</p>
+                </div>
+            </div>
+            <div class="video">
+                <p class="point-description">Oto przykładowy film instruktażowy.</p>
+                <iframe src="https://youtube.com/embed/BQ308X5_xn4?si=MUIB8Yg17P4Fcj2b"></iframe>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
