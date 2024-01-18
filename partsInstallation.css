@@ -80,9 +80,39 @@ header {
     padding-top: 5.5rem;
     backdrop-filter: blur(0.05rem);
     border-radius: 50px;
-    height: 800px;
+    height: 400px;
     background-size: cover;
     max-width: 1400px;
+}
+
+.back-to-top-scroll-button{
+    display: flex;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: rgb(0, 0, 0, 0.7);
+    border: none;
+    background-color: rgb(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.25);
+    transition: 1s;
+}
+
+.back-to-top-scroll-button:hover{
+    transform: scale(1.05);
+    background-color: rgba(106, 238, 255, 0.85);
+}
+
+.back-to-top-scroll-button a{
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    
 }
 
 .title-heading {
@@ -1214,13 +1244,29 @@ input:checked + input ~ input:before {
     }
 
     .tableOfWires img{
-        width: 250px;
+        width: 150px;
     }
 
     .end{
         padding: 0;
     }
 
+    .memory .point-container:nth-child(2) .s-title{
+        padding-left: 30px;
+    }
+
+    .memory .point-container{
+        max-width: 80%;
+    }
+
+    .memory .point-description{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .end .video{
+        margin: 0;
+    }
 }
 
 
