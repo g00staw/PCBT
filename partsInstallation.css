@@ -85,36 +85,6 @@ header {
     max-width: 1400px;
 }
 
-.back-to-top-scroll-button{
-    display: flex;
-    position: fixed;
-    bottom: 5%;
-    right: 2%;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    color: rgb(0, 0, 0, 0.7);
-    border: none;
-    background-color: rgb(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0.25);
-    transition: 1s;
-}
-
-.back-to-top-scroll-button:hover{
-    transform: scale(1.05);
-    background-color: rgba(106, 238, 255, 0.85);
-}
-
-.back-to-top-scroll-button a{
-    position: relative;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-    
-}
-
 .title-heading {
     font-size: 2.6rem;
     line-height: 1.07;
@@ -260,6 +230,10 @@ hr{
     transition: 1s;
 }
 
+.back-to-top-scroll-button{
+    display: none;
+}
+
 .spoint-container{
     display: flex;
     background: url("images/hero/partsInstalling/clu-soh-oga9Xg0KVnU-unsplash.jpg");
@@ -309,7 +283,7 @@ h2{
 }
 
 .point-description{
-    font-size: 25px;
+    font-size: 20px;
     color:rgba(255, 255, 255, 0.9);
     font-weight: 400;
     text-align: left;
@@ -382,7 +356,7 @@ iframe{
 }
 
 iframe:hover{
-    scale: 1.1;
+    scale: 1.02;
 }
 
 .video .point-description{
@@ -496,103 +470,113 @@ iframe:hover{
     background-size: 200%;
 }
 
+/*Ten element jest używany jako kontener dla przełącznika. Ma określone wymiary i zaokrąglone narożniki. 
+Wszystko, co przekracza te granice (dzięki właściwości overflow: hidden), jest ukrywane.*/
 i {
     margin-top: 5%;
     margin-left: 7%;
-	position: relative;
-	display: block;
-	width: 768px;
-	height: 432px;
-	overflow: hidden;
-	border-radius: 5px;
+    position: relative;
+    display: block;
+    width: 768px;
+    height: 432px;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
+/*i:before i i:after: Te pseudoelementy są używane do stworzenia strzałek nawigacyjnych po obu stronach kontenera. 
+Są one umieszczone absolutnie w środku kontenera i mają określone wymiary, kolor tła i kolor tekstu.*/
 i:before, i:after {
-	content: '⥪';
-	position: absolute;
-	top: 50%;
-	left: 1rem;
-	z-index: 2;
-	width: 2rem;
-	height: 2rem;
-	background: dodgerblue;
-	color: white;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	pointer-events: none;
+    content: '↩';
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(0, 11, 22, 0.808);
+    color: rgb(136, 218, 249);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 2;
 }
+
 
 i:after {
-	content: '⥭';
-	left: auto;
-	right: 1rem;
+    content: '↪';
+    left: auto;
+    right: 1rem;
 }
 
-/* I haven't found a way for IE and Edge to let me style inputs that way */
+/* input: Ten element jest używany do przechowywania obrazów lub treści, które będą przełączane. 
+Każdy element input jest umieszczony absolutnie na górze kontenera i ma tę samą szerokość i wysokość co kontener. 
+Domyślnie, elementy input są przesunięte o 100% w prawo (dzięki właściwości transform: translateX(100%)), co oznacza, że są niewidoczne.*/
 input {
-	appearance: none;
-	-ms-appearance: none;
-	-webkit-appearance: none;
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-radius: 5px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	transform: translateX(100%);
-	transition: transform ease-in-out 400ms;
-	z-index: 1;
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translateX(100%);
+    transition: transform ease-in-out 400ms;
+    z-index: 1;
 }
 
-input:focus {
-	outline: none;
-}
-
+/*input:after: Ten pseudoelement jest używany do wyświetlania tytułu obrazu lub treści. 
+Jest umieszczony absolutnie na górze elementu input i ma określone tło, kolor tekstu i padding.*/
 input:after {
-	content: attr(title);
-	position: absolute;
-	top: 1rem;
-	left: 1rem;
-	background-color: rgba(0,0,0,0.4);
-	color: white;
-	padding: .5rem;
-	font-size: 1rem;
-	border-radius: 5px;
+    content: attr(title);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 5px;
 }
 
+/*input:not(checked):before: Ten pseudoelement jest używany do stworzenia animacji przejścia. 
+Kiedy element input nie jest zaznaczony, pseudoelement jest widoczny i umieszczony po lewej stronie elementu input.*/
 input:not(checked):before {
-	content: '';
-	position: absolute;
-	width: 2rem;
-	height: 2rem;
-	border-radius: 50%;
-	top: 50%;
-	left: calc(-100% + 1rem);
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    top: 50%;
+    left: calc(-100% + 1rem);
 }
+
 
 input:checked:before {
-	display: none;
-	left: 1rem;
+    display: none;
+    left: 1rem;
 }
-
+/*input:checked: Kiedy element input jest zaznaczony, jest przesuwany z powrotem do pozycji początkowej (dzięki właściwości transform: translateX(0)), 
+co sprawia, że jest widoczny. Dodatkowo, pseudoelement input:checked:before jest ukrywany.*/
 input:checked {
-	transform: translateX(0);
-	z-index: 0;
-	box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);
+    transform: translateX(0);
+    z-index: 0;
+    box-shadow: -5px 10px 20px -15px rgba(0,0,0,1);
 }
 
+/*input:checked + input:before: Ten selektor jest używany do animacji przejścia między różnymi elementami input. 
+Kiedy jeden element input jest zaznaczony, pseudoelement before następnego elementu input jest przesuwany w lewo.*/
 input:checked + input:before {
-	left: -3rem;
+    left: -3rem;
 }
 
+/*input:checked + input ~ input:before: Ten selektor jest używany do ukrycia pseudoelementów before wszystkich kolejnych elementów input, gdy jeden element input jest zaznaczony.*/
 input:checked + input ~ input:before {
-	display: none;
+    display: none;
 }
 
 .graphic{
@@ -754,12 +738,17 @@ input:checked + input ~ input:before {
 .power .media-container{
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
     width: 100%;
     align-items: center;
 }
 
+.copy-right-link{
+    font-size: 10px;
+    text-align: center;
+    color: cornflowerblue;
+}
 
 .power .media-container i{
     margin-left: 0%;
@@ -838,8 +827,9 @@ input:checked + input ~ input:before {
     transition: 1s;
     border-radius: 10px;
     height: 500px;
-    padding-bottom: 5%;
     color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 50px;
+    margin-bottom: 5%;
 }
 
 .end .video{
@@ -1266,6 +1256,37 @@ input:checked + input ~ input:before {
 
     .end .video{
         margin: 0;
+    }
+
+    .back-to-top-scroll-button{
+        display: flex;
+        position: fixed;
+        bottom: 5%;
+        right: 2%;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        color: rgb(0, 0, 0, 0.7);
+        border: none;
+        background-color: rgb(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.25);
+        transition: 1s;
+    }
+    
+    .back-to-top-scroll-button:hover{
+        transform: scale(1.05);
+        background-color: rgba(106, 238, 255, 0.85);
+    }
+    
+    .back-to-top-scroll-button a{
+        font-size: large;
+        position: relative;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+        
     }
 }
 
