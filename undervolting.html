@@ -40,19 +40,46 @@
                         <a href="partsInstallation.html" class="nav-link nav-link-partsInstallation">Instalacja podzespołów</a>
                     </li>
                     <li class="nav-item">
-                        <a href="overclocking.html" class="nav-link nav-link-overclocking">Overclocking</a>
+                        <a href="overclocking.html" class="nav-link">Overclocking</a>
                     </li>
                     <li class="nav-item">
-                        <a href="undervolting.html" class="nav-link nav-link-undervolting">Undervolting</a>
+                        <a href="undervolting.html" class="nav-link-undervolting">Undervolting</a>
                     </li>
                     <li class="nav-item">
-                        <a href="maintenance.html" class="nav-link">Serwisowanie</a>
+                        <a href="maintenance.html" class="nav-link nav-link-maintenance">Serwisowanie</a>
                     </li>
                 </ul>
                 <!-- /.nav-list nav-list-larger -->
             </nav>
         </div>
     </header>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Ta sekcja jest dla zaawansowanych użytkowników. Należy ją traktować jako ciekawostkę. Przed przystąpieniem do wspomnianych czynności prosimy o dokładne zgłębienie tematu z innych źródeł! <span class="important">NIE PONOSIMY ODPOWIEDZIALNOŚCI ZA PONIESIONE SZKODY W WYNIKU POWTARZANIA NIŻEJ WYMIENIONYCH CZYNNOŚCI!</span>
+             Przechodząc dalej akceptujesz ryzyko.
+        </p>
+        </div>
+      </div>
+      <!-- JavaScript -->
+      <script>
+          var modal = document.getElementById("myModal");
+          var span = document.getElementsByClassName("close")[0];
+
+          window.onload = function() {
+            modal.style.display = "block";
+          }
+
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+      </script>
     <script src="main.js"></script>
     <div class="back-to-top-scroll-button"><a href="#titleheading">▲</a></div>
     <section class="hero partsInstallation">
@@ -185,6 +212,10 @@
                 <li>
                     <a>Numer telefonu:</a> 
                     <a>+48 123 456 789</a>
+                </li>
+                <li>
+                    <a>Zgłoś:</a> 
+                    <a href="form.html">Formularz zgłoszeniowy</a>
                 </li>
             </ul>
         </div>

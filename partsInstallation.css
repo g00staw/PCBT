@@ -53,6 +53,10 @@ header {
     transition: opacity .5s;
 }
 
+.nav-link-bag{
+    display: none;
+}
+
 .nav-link-partsInstallation{
     font-size: 1.4rem;
     color: #fff;
@@ -745,7 +749,7 @@ input:checked + input ~ input:before {
 }
 
 .copy-right-link{
-    font-size: 10px;
+    font-size: 5px;
     text-align: center;
     color: cornflowerblue;
 }
