@@ -338,7 +338,8 @@ iframe{
 
 .img-in-text{
     float: right;
-    max-width: 400px;
+    width: 400px;
+    min-width: 200px;
     border-radius: 20px;
 }
 
