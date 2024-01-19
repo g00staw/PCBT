@@ -961,4 +961,31 @@ iframe{
         background-position-x: 50%;
         background-position-y: 70%;
     }
+
+    .processor .spoint-container{
+        background-size: 450%;
+        background-position-x: 60%;
+        background-position-y: 100%;
+    }
+
+    .processor .points-container{
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .mobo .spoint-container{
+        background-size: 450%;
+        background-position-x: 60%;
+        background-position-y: 100%;
+        margin-left: 0;
+    }
+
+    .mobo .points-container{
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .memory{
+        background: none;
+    }
 }
