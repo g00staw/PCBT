@@ -226,7 +226,7 @@ hr{
 
 .spoint-container{
     display: flex;
-    background: url("images/hero/maintance/tetiana-shyshkina-jhOD8L0s7dQ-unsplash.jpg");
+    background: url("images/hero/maintance/tetiana-shyshkina-unsplash.jpg");
     background-size: 80%;
     background-position-x: 30%;
     background-position-y: 50%;
@@ -236,7 +236,8 @@ hr{
 .processor{
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    margin: 50px;
+    padding: 20px;
     transition: 1s;
 }
 
@@ -309,7 +310,7 @@ h2{
 }
 
 .processor{
-    border-radius: 10px;
+    border-radius: 25px;
 }
 
 .processor iframe{
@@ -358,8 +359,10 @@ iframe{
 .mobo{
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    margin: 50px;
+    padding: 20px;
     transition: 1s;
+    border-radius: 25px;
 }
 
 .mobo .point-div{
@@ -375,7 +378,7 @@ iframe{
 .mobo .spoint-container{
     justify-content: left;
     margin-left: 50px;
-    background: url("images/hero/maintance/sven-finger-2sILr4DwabQ-unsplash.jpg");
+    background: url("images/hero/maintance/sven-finger-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: 100%;
@@ -393,6 +396,8 @@ iframe{
     transition: 1s;
     margin-top: 100px;
     padding: 20px;
+    margin: 30px;
+    border-radius: 25px;
 }
 
 .memory h2{
@@ -491,7 +496,7 @@ iframe{
 }
 
 .memory{
-    background: url("images/hero/maintance/olivier-collet-JMwCe3w7qKk-unsplash.jpg");
+    background: url("images/hero/maintance/olivier-collet-unsplash.jpg");
     background-size: 80%;
     background-repeat: no-repeat;
     background-position-x: 50%;
@@ -509,7 +514,9 @@ iframe{
 .graphic{
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    margin: 30px;
+    border-radius: 25px;
+    padding: 20px;
     transition: 1s;
 }
 
