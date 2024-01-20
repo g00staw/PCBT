@@ -149,7 +149,7 @@ header {
 }
 
 .partsInstallation{
-    background: url("images/hero/maintance/daniel-lezuch-I4DcRJ_Evd8-unsplash\ \(1\).jpg");
+    background: url("images/hero/maintance/daniel-lezuch-I4DcRJ_Evd8-unsplash.jpg");
     transition: 2s;
 }
 
@@ -375,7 +375,7 @@ iframe{
 .mobo .spoint-container{
     justify-content: left;
     margin-left: 50px;
-    background: url("/images/hero/maintance/sven-finger-2sILr4DwabQ-unsplash.jpg");
+    background: url("images/hero/maintance/sven-finger-2sILr4DwabQ-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: 100%;
@@ -491,7 +491,7 @@ iframe{
 }
 
 .memory{
-    background: url("/images/hero/maintance/olivier-collet-JMwCe3w7qKk-unsplash.jpg");
+    background: url("images/hero/maintance/olivier-collet-JMwCe3w7qKk-unsplash.jpg");
     background-size: 80%;
     background-repeat: no-repeat;
     background-position-x: 50%;
@@ -526,7 +526,7 @@ iframe{
 .graphic .spoint-container{
     justify-content: left;
     margin-left: 50px;
-    background: url("/images/hero/maintance/bruno-yamazaky-ts17B8i4Mog-unsplash.jpg");
+    background: url("images/hero/maintance/bruno-yamazaky-ts17B8i4Mog-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: 100%;
