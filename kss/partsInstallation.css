@@ -1,3 +1,318 @@
+
+/*
+    Instalacja podzespołów
+
+    Opis najważniejszych elementów występujących na stronie z pominięciem wcześniej występujących
+
+    
+    `<div class="points-container">` - kontener przechowywujący punkty dla sekcji w wyświetlaniu flex, kierunek kolumnowy i zdefiniowaną rozdzielczością
+
+    `<div class="video">` - przechowuje tytuł do załącznika wideo oraz sam załącznik, wyświetlanie flex, kierunek kolumnowy
+
+    `<div class="point-div">` - przechowuje jeden point dla points-container, wyświetlanie flex
+
+    `<div class="point-container">` -przechowuje drugi rodzaj punktów, wyświetlanie flex, kierunek kolumnowy oraz wyśrodkowuje treści, definiuje nowe style dla point-div
+
+    `<div class="media-container">` - przechowuje responsywną tabelę oraz galerię zdjęć, wyświetlanie flex, kierunek kolumnowy oraz wyśrodkowuje treści
+
+    `<table class="tableOfWires">` - resposywna tabela która dostosowuje się do rozmiarów urządzenia, overflow - x: auto, overflow - y: scroll
+
+    Style guide: 3.0
+
+*/
+
+
+/*
+    points-container
+
+    Markup:
+    <div class="points-container">
+                <p class="point-description">Zamontowanie procesora w płycie głównej wymaga kilku kroków, które zależą od typu procesora i gniazda. Procesor Intel lub AMD można zainstalować na płycie głównej w następujący sposób:</p><br>
+                <div class="point-div">
+                    <p class="number">1.</p>
+                    <p class="point-description">Oparcie płyty głównej na pudełku, co zapewni solidną podstawę do zamontowania komponentów na płycie głównej.</p><br>
+                </div>
+                <div class="point-div">
+                    <p class="number">2.</p>
+                    <p class="point-description">Podniesienie procesora i trzymanie plastikowego pudełka pod ręką (na wypadek, gdybyś musiał odłożyć go z powrotem w bezpieczne miejsce).</p><br>
+                </div>
+                <div class="point-div">
+                    <p class="number">3.</p>
+                    <p class="point-description">Umieszczenie chipa w gniaździe procesora płyty głównej, wyrównując znaki i wycięcia procesora z gniazdem.</p><br>
+                </div>
+            </div>
+
+
+    Style guide: 3.1
+*/
+
+/*
+    video
+
+    Markup:
+    <div class="video">
+                <p class="point-description">Oto przykładowy film instruktażowy.</p>
+                <iframe src="https://www.youtube.com/embed/_zojIW-2DD8?si=yorHTloNfg7qvAkD"></iframe>
+            </div>
+
+    Style guide: 3.2
+
+*/
+
+/* 
+    point-div - dla points-container
+
+    Markup:
+    <div class="point-div">
+                    <p class="number">2.</p>
+                    <p class="point-description">Podniesienie procesora i trzymanie plastikowego pudełka pod ręką (na wypadek, gdybyś musiał odłożyć go z powrotem w bezpieczne miejsce).</p><br>
+                </div>
+    Style guide: 3.3
+
+*/
+
+/*
+    point-container
+
+    Markup:
+    <div class="point-container">
+            <div class="point-div">
+                <p class="number">1.</p>
+                <p class="point-description">Przygotuj narzędzia i akcesoria potrzebne do instalacji.</p><br>
+            </div>
+            <div class="point-div">
+                <p class="number">2.</p>
+                <p class="point-description">Otwórz obudowę komputera i umieść ją na płaskiej powierzchni.</p><br>
+            </div>
+            <div class="point-div">
+                <p class="number">3.</p>
+                <p class="point-description">Zidentyfikuj miejsce, w którym płyta główna będzie zamontowana. Zazwyczaj znajduje się ono w dolnej części obudowy.</p><br>
+            </div>
+            <div class="point-div">
+                <p class="number">4.</p>
+                <p class="point-description">Przykręć dystanse do obudowy w miejscach, w których płyta główna będzie przymocowana.</p><br>
+            </div>
+        </div>
+
+    Style guide: 3.4
+
+*/
+
+/*
+
+    media-container
+
+    Markup:
+    <div>
+        <div class="media-container">
+                <h3>Podział kabli które bedą podpięte to płyty głównej</h3>
+                <div class="table-container">
+                    <table class="tableOfWires">
+                        <tr>
+                            <th>Kabel</th>
+                            <th>Opis</th>
+                            <th>Zdjęcie</th>
+                        </tr>
+                        <tr>
+                            <td>ATX 24-pin (24-pinowy złączalny zasilacz)</td>
+                            <td>Ten kabel dostarcza główną moc zasilania do płyty głównej. Składa się z 24 pinów i jest podstawowym zasilaniem dla większości komputerów stacjonarnych. Obejmuje zarówno napięcia dla zasilania procesora, pamięci RAM, jak i pozostałych komponentów na płycie głównej.</td>
+                            <td><img src="images/hero/partsInstalling/conector-atx-24-pines.png"></td>
+                        </tr>
+                          <tr>
+                            <td>ATX 8-pin / CPU Power (8-pinowy złączalny zasilacz CPU)</td>
+                            <td>Ten kabel dostarcza dodatkową moc zasilania dla procesora. W przypadku niektórych płyt głównych może występować w postaci 4-pinowego złącza, ale wiele nowoczesnych procesorów i płyt głównych wymaga 8-pinowego zasilania CPU.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/cpu-power.jpg">
+                                <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage">https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>PCIe (zasilanie karty graficznej)</td>
+                            <td>Karty graficzne wymagają dodatkowego zasilania, które dostarcza kabel PCIe. Dostępne są różne wersje tego kabla, takie jak PCIe 6-pin, PCIe 8-pin, a także kombinacje, takie jak 6+2-pin, które mogą być używane do różnych kart graficznych.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/pci-e.jpg">
+                                <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg">https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg</a>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td>SATA (zasilanie i transfer danych dla urządzeń pamięci masowej)</td>
+                            <td>Kabel SATA jest używany do zasilania i przesyłania danych pomiędzy płytą główną a urządzeniami pamięci masowej, takimi jak dyski twarde, SSD czy napędy optyczne.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/sata-wire.jpg">
+                                <a class="copy-right-link" href="https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg">https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Molex (starsze urządzenia peryferyjne)</td>
+                            <td>Kablowanie Molex jest starszym standardem, który był powszechnie używany do zasilania starszych urządzeń peryferyjnych, takich jak napędy optyczne, wentylatory, czy inne dodatkowe komponenty.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/molex-wire.jpg">
+                                <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg">https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>USB (Universal Serial Bus)</td>
+                            <td>Kable USB służą do łączenia różnych urządzeń peryferyjnych z komputerem, takich jak klawiatury, myszy, drukarki, itp.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/usb-mobo-wire.jpg">
+                                <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>HD Audio (Audio Front Panel)</td>
+                            <td>Kabel HD Audio łączy przedni panel obudowy z płytą główną, umożliwiając podłączenie gniazd słuchawkowych i mikrofonowych dostępnych na przednim panelu obudowy.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/hd-audio-wire.jpg">
+                                <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Wentylatory (CPU Fan, Case Fan)</td>
+                            <td>Kable od wentylatorów służą do zasilania i kontrolowania obrotów wentylatorów. W przypadku wentylatora procesora (CPU Fan) często łączony jest z odpowiednim złączem na płycie głównej, umożliwiając kontrolę obrotów w zależności od temperatury procesora. Wentylatory obudowy mogą być również podłączane do złącz na płycie głównej lub do kontrolera wentylatorów, jeśli obudowa posiada taki element.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/fan-wire.jpg">
+                                <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kable od obudowy (Power Switch, Reset Switch, HDD LED, Power LED)</td>
+                            <td>Kable te łączą przyciski zasilania, resetu, diodę sygnalizacyjną pracy dysku twardego (HDD LED) oraz diodę sygnalizującą zasilanie (Power LED) z odpowiednimi złączami na płycie głównej. Umożliwiają one obsługę przycisków na przednim panelu obudowy oraz informują o stanie pracy komputera.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/fan-case-wire.jpg">
+                                <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>USB Front Panel (USB 2.0, USB 3.0)</td>
+                            <td>Kablowanie USB Front Panel łączy porty USB na przednim panelu obudowy z odpowiednimi złączami na płycie głównej, umożliwiając podłączenie urządzeń USB do komputera.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/case-wires.jpg">
+                                <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SATA Power (zasilanie urządzeń pamięci masowej)</td>
+                            <td>Podobnie jak kabel SATA, ale służy jedynie do zasilania urządzeń pamięci masowej, takich jak dyski twarde czy SSD.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/sata-power.jpg">
+                                <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg">https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <i>
+                    <input type="radio" name="s" style="background-image: url('images/hero/partsInstalling/perfect-cable-management.jpg');" title="Idealnie poprowadzone kable z tyłu obudowy">
+                    <input checked type="radio" name="s" style="background-image: url('images/hero/partsInstalling/cable-management-nside.jpg');" title="Popowadzenie kabli w środku obudowy">
+                    <input type="radio" name="s" style="background-image: url('images/hero/partsInstalling/onur-binay-z3MP5DDiEME-unsplash.jpg');" title="">
+                </i>
+            </div>
+        </div>
+        
+        Style guide: 3.5
+
+*/
+
+/*
+    tableOfWires
+
+    Markup:
+    <table class="tableOfWires">
+                        <tr>
+                            <th>Kabel</th>
+                            <th>Opis</th>
+                            <th>Zdjęcie</th>
+                        </tr>
+                        <tr>
+                            <td>ATX 24-pin (24-pinowy złączalny zasilacz)</td>
+                            <td>Ten kabel dostarcza główną moc zasilania do płyty głównej. Składa się z 24 pinów i jest podstawowym zasilaniem dla większości komputerów stacjonarnych. Obejmuje zarówno napięcia dla zasilania procesora, pamięci RAM, jak i pozostałych komponentów na płycie głównej.</td>
+                            <td><img src="images/hero/partsInstalling/conector-atx-24-pines.png"></td>
+                        </tr>
+                          <tr>
+                            <td>ATX 8-pin / CPU Power (8-pinowy złączalny zasilacz CPU)</td>
+                            <td>Ten kabel dostarcza dodatkową moc zasilania dla procesora. W przypadku niektórych płyt głównych może występować w postaci 4-pinowego złącza, ale wiele nowoczesnych procesorów i płyt głównych wymaga 8-pinowego zasilania CPU.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/cpu-power.jpg">
+                                <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage">https://pl.wikipedia.org/wiki/Plik:ATX12V_EPS12V_(8-pin).jpg#globalusage</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>PCIe (zasilanie karty graficznej)</td>
+                            <td>Karty graficzne wymagają dodatkowego zasilania, które dostarcza kabel PCIe. Dostępne są różne wersje tego kabla, takie jak PCIe 6-pin, PCIe 8-pin, a także kombinacje, takie jak 6+2-pin, które mogą być używane do różnych kart graficznych.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/pci-e.jpg">
+                                <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg">https://pl.wikipedia.org/wiki/Plik:PCI-E_6pin_8pin.jpg</a>
+                            </td>
+                        </tr>
+                          <tr>
+                            <td>SATA (zasilanie i transfer danych dla urządzeń pamięci masowej)</td>
+                            <td>Kabel SATA jest używany do zasilania i przesyłania danych pomiędzy płytą główną a urządzeniami pamięci masowej, takimi jak dyski twarde, SSD czy napędy optyczne.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/sata-wire.jpg">
+                                <a class="copy-right-link" href="https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg">https://commons.wikimedia.org/wiki/File:SATA_Data_Cable.jpg</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Molex (starsze urządzenia peryferyjne)</td>
+                            <td>Kablowanie Molex jest starszym standardem, który był powszechnie używany do zasilania starszych urządzeń peryferyjnych, takich jak napędy optyczne, wentylatory, czy inne dodatkowe komponenty.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/molex-wire.jpg">
+                                <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg">https://pl.wikipedia.org/wiki/Plik:Molex_female_connector.jpg</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>USB (Universal Serial Bus)</td>
+                            <td>Kable USB służą do łączenia różnych urządzeń peryferyjnych z komputerem, takich jak klawiatury, myszy, drukarki, itp.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/usb-mobo-wire.jpg">
+                                <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>HD Audio (Audio Front Panel)</td>
+                            <td>Kabel HD Audio łączy przedni panel obudowy z płytą główną, umożliwiając podłączenie gniazd słuchawkowych i mikrofonowych dostępnych na przednim panelu obudowy.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/hd-audio-wire.jpg">
+                                <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Wentylatory (CPU Fan, Case Fan)</td>
+                            <td>Kable od wentylatorów służą do zasilania i kontrolowania obrotów wentylatorów. W przypadku wentylatora procesora (CPU Fan) często łączony jest z odpowiednim złączem na płycie głównej, umożliwiając kontrolę obrotów w zależności od temperatury procesora. Wentylatory obudowy mogą być również podłączane do złącz na płycie głównej lub do kontrolera wentylatorów, jeśli obudowa posiada taki element.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/fan-wire.jpg">
+                                <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kable od obudowy (Power Switch, Reset Switch, HDD LED, Power LED)</td>
+                            <td>Kable te łączą przyciski zasilania, resetu, diodę sygnalizacyjną pracy dysku twardego (HDD LED) oraz diodę sygnalizującą zasilanie (Power LED) z odpowiednimi złączami na płycie głównej. Umożliwiają one obsługę przycisków na przednim panelu obudowy oraz informują o stanie pracy komputera.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/fan-case-wire.jpg">
+                                <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>USB Front Panel (USB 2.0, USB 3.0)</td>
+                            <td>Kablowanie USB Front Panel łączy porty USB na przednim panelu obudowy z odpowiednimi złączami na płycie głównej, umożliwiając podłączenie urządzeń USB do komputera.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/case-wires.jpg">
+                                <a class="copy-right-link">Zdjęcie wykonane przeze mnie.</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SATA Power (zasilanie urządzeń pamięci masowej)</td>
+                            <td>Podobnie jak kabel SATA, ale służy jedynie do zasilania urządzeń pamięci masowej, takich jak dyski twarde czy SSD.</td>
+                            <td>
+                                <img src="images/hero/partsInstalling/sata-power.jpg">
+                                <a class="copy-right-link" href="https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg">https://pl.wikipedia.org/wiki/Plik:SATA_Power_Plug.jpg</a>
+                            </td>
+                        </tr>
+                    </table>
+        
+        Style guide: 3.6
+
+*/
+
 *,
 *::before,
 *::after {
@@ -95,7 +410,9 @@ header {
     letter-spacing: 0.15rem;
     padding-bottom: 5px;
     padding-top: 5px;
+    /* Dodałem wypełnienie, aby ramka miała więcej miejsca do zaokrąglenia */
     display: inline-block;
+    /* Element inline-block, aby dopasować się do zawartości */
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid;
@@ -162,8 +479,8 @@ header {
     background-position-x: 50%;
     background-position-y: 40%;
     background-repeat: no-repeat;
-    border-bottom-style: solid; 
-    border-bottom-width: 5px; 
+    border-bottom-style: solid; /* Use border-bottom-style instead of border-style */
+    border-bottom-width: 5px; /* Use border-bottom-width instead of border-width */
     border-image: linear-gradient(90deg, rgb(145, 250, 255) 0%, rgb(27, 202, 255) 39%, rgb(0, 51, 234) 60%, rgb(145, 250, 255) 100%);
     border-image-repeat: round;
     border-image-slice: 1;

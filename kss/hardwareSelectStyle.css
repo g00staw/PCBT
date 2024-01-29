@@ -1,3 +1,283 @@
+
+/*
+    Dobór podzespołow
+
+    Opis najważniejszych elementów występujących na stronie
+
+    `Sekcja  <section class="hero hardwareSelection">` - zawiera konterner z tytułem strony, opis poszczególnych stron oraz stopke
+    
+    `<div class="title">` - przechowuje tytuły strony z odpwoiednim rozmiarem
+
+    `<div class="boxForTable">` - przechowuje tabele ze spisem treści strony wyśrodkowując ją
+
+    `<div class="content">` - przechowuje treść strony
+
+    `<div class="sectionContainer">` - przechowuje treść danej sekcji
+
+    `<div class="slideContainer">` - przechowuje opis sekcji, wyswietlajac ja na flexie
+
+    `<h1 class="sectionTitle">Karta graficzna</h1>` - główny tytuł sekcji, ustawia kolor, rozmiar czcionki
+
+    `<img class="slideImage">` - wyświetla zdjęcie dla slideContainer, reguluje jego rozmiar
+
+    `<div class="pointsContainer">` - kontener na punkty, wyświetlanie flex, wrap
+
+    `<div class="point">` - przechowuje tytuł punktu oraz opis
+
+    `<div class="categoryPointContainer">` - przechowuje drugi rodzaj punktów, wyświetlanie grid na dwie kolumny
+
+    `<div class="categoryPoint">` - drugi rodzaj punktu, wewnetrzne wyswietlanie flex
+
+    Style guide: 2.0
+
+*/
+
+/*
+    hero hardwareSelection
+
+    Markup:
+        <section class="hero hardwareSelection">
+            <div class="container">
+                <div class="title">
+                    <h2 class="title-heading" id="titleheading">Dobór komponentów</h2>   
+                    <p class="subTitleCon">Czym się kierować?</p>
+                    <a href="#title-heading2" class="short-link">Dowiedz się więcej. ></a>
+                </div>
+                <div class="boxForTable">
+                    <div class="tableOfContent">
+                        <p>Spis treści</p>
+                        <ul>
+                            <li><a href="#1">Wprowadzenie</a></li>
+                            <li><a href="#2">Karta graficzna</a></li>
+                            <li><a href="#3">Procesor</a></li>
+                            <li><a href="#4">Chłodzenie procesora</a></li>
+                            <li><a href="#5">Pamięć RAM</a></li>
+                            <li><a href="#6">Płyta główna</a></li>
+                            <li><a href="#7">Obudowa</a></li>
+                            <li><a href="#8">Dyski</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <section id="1" class="introSlide">
+                    <h1 class="sectionTitle">Wprowadzenie</h1>
+    
+                </section>
+            </div>
+        </section>
+
+    Style guide: 2.1
+
+*/
+
+/*
+    title
+
+    Markup:
+    <div class="title">
+                <h2 class="title-heading" id="titleheading">Dobór komponentów</h2>   
+                <p class="subTitleCon">Czym się kierować?</p>
+                <a href="#title-heading2" class="short-link">Dowiedz się więcej. ></a>
+    </div>
+
+    Style guide: 2.2
+*/
+
+/*
+    boxForTable
+
+    Markup:
+    <div class="boxForTable">
+                <div class="tableOfContent">
+                    <p>Spis treści</p>
+                    <ul>
+                        <li><a href="#1">Wprowadzenie</a></li>
+                        <li><a href="#2">Karta graficzna</a></li>
+                        <li><a href="#3">Procesor</a></li>
+                        <li><a href="#4">Chłodzenie procesora</a></li>
+                        <li><a href="#5">Pamięć RAM</a></li>
+                        <li><a href="#6">Płyta główna</a></li>
+                        <li><a href="#7">Obudowa</a></li>
+                        <li><a href="#8">Dyski</a></li>
+                    </ul>
+                </div>
+                <hr>    
+            </div>
+
+    Style guide: 2.3
+
+
+*/
+
+/*
+
+    content
+
+    Markup:
+    <div class="content">
+            <section id="1" class="introSlide">
+                <h1 class="sectionTitle">Wprowadzenie</h1>
+                <p class="slidesContent">Wybór odpowiednich komponentów do komputera jest kluczowym krokiem w budowie efektywnego i wydajnego systemu. Każda część pełni istotną rolę, a ich harmonijne dopasowanie może zdecydować o ogólnej wydajności i funkcjonalności komputera. Przyjęcie strategicznego podejścia do doboru podzespołów, takich jak procesor, karta graficzna, pamięć RAM czy dysk SSD, pozwala dostosować system do konkretnych zastosowań, od gier po profesjonalne zadania graficzne czy programowanie. W tym kontekście, zrozumienie kluczowych parametrów i technologii związanych z poszczególnymi komponentami staje się kluczowe, aby osiągnąć optymalną wydajność i zadowalające rezultaty. W dalszej części omówimy istotne aspekty, na które warto zwrócić uwagę podczas doboru części do komputera.</p>
+            </section>
+        </div>
+
+    Style guide: 2.4
+
+*/
+
+/*
+    sectionContainer
+
+    Markup:
+    <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Na co zwrócić uwagę?</h2>
+                    <div class="pointsContainer">
+                        <div class="point">
+                            <h2 class="point-title">Proces technologiczny</h2>
+                            <p class="pointDescription">Oznacza, ile nanometrów wynosi technologia produkcji GPU. Im mniejszy ten parametr, tym bardziej efektywna i wydajna jest karta graficzna.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Ilość rdzeni CUDA / Stream Processors</h2>
+                            <p class="pointDescription">Liczba rdzeni obliczeniowych wpływa na ogólną wydajność karty. Więcej rdzeni zazwyczaj oznacza lepszą wydajność w zadaniach obliczeniowych.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Pamięć VRAM</h2>
+                            <p class="pointDescription">Duża ilość pamięci VRAM jest ważna przy pracy z dużymi teksturami, modelami 3D i wysokimi rozdzielczościami. W przypadku gier, zwłaszcza w rozdzielczości 4K, zaleca się kartę z co najmniej 8 GB VRAM.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Rodzaj pamięci</h2>
+                            <p class="pointDescription">GDDR6 jest obecnie jednym z najnowszych standardów i oferuje wyższą przepustowość niż wcześniejsze wersje, takie jak GDDR5</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Szybkość taktowania</h2>
+                            <p class="pointDescription">Oznacza, jak szybko pracuje GPU. Wyższe taktowanie zazwyczaj przekłada się na lepszą wydajność, ale nie jest jedynym kluczowym czynnikiem.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Technologie Ray Tracing i DLSS (NVIDIA)</h2>
+                            <p class="pointDescription">Technologia śledzenia promieni (ray tracing) pozwala na bardziej realistyczne efekty świetlne w grach.
+                                Deep Learning Super Sampling (DLSS) to technologia, która wykorzystuje sztuczną inteligencję do poprawy jakości obrazu przy mniejszym obciążeniu GPU.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Zużycie energii i zasilanie</h2>
+                            <p class="pointDescription">Sprawdź, czy zasilacz w twoim systemie spełnia wymagania karty graficznej pod względem mocy i złącz zasilających.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Rozmiar i chłodzenie</h2>
+                            <p class="pointDescription">Upewnij się, że karta mieści się w obudowie komputera.
+                                Dobre chłodzenie jest kluczowe dla utrzymania niskich temperatur podczas intensywnego obciążenia.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Generacja PCIe:</h2>
+                            <p class="pointDescription">Sprawdź, czy karta obsługuje daną generację PCIe (np. PCIe 3.0, PCIe 4.0). Wybierając nowoczesną kartę, warto korzystać z najnowszej generacji dla zwiększenia przepustowości.</p>
+                        </div>
+                    </div>
+                </div>
+
+    Style guide: 2.5
+
+
+
+*/
+
+
+/*
+    sectionTitle
+
+    Markup:
+        <h1 class="sectionTitle">Wprowadzenie</h1>
+
+    Style guide: 2.6
+
+*/
+
+/*
+
+    pointsContainer
+
+    Markup:
+    <div class="pointsContainer">
+                        <div class="point">
+                            <h2 class="point-title">Liczba Rdzeni i Wątków:</h2>
+                            <p class="pointDescription">Im więcej rdzeni i wątków, tym lepsza wydajność w zadaniach wielozadaniowych i wielowątkowych. Procesory wielordzeniowe są korzystne przy renderowaniu, kompilacji kodu czy obróbce grafiki.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Częstotliwość Zegara:</h2>
+                            <p class="pointDescription">Wyższa częstotliwość zegara przekłada się na szybsze wykonywanie pojedynczych zadań. To istotne w grach i zadaniach, które korzystają z pojedynczego wątku.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Pamięć Cache:</h2>
+                            <p class="pointDescription">Większa pamięć cache przyspiesza dostęp do danych, co ma znaczenie dla ogólnej wydajności procesora. L2 i L3 cache są szczególnie ważne.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">TDP (Thermal Design Power):</h2>
+                            <p class="pointDescription">Oznacza ilość energii, jaką procesor generuje podczas pełnej pracy. Wybieraj procesory o odpowiednim TDP, aby uniknąć problemów z chłodzeniem.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Kompatybilność z Płytą Główną:</h2>
+                            <p class="pointDescription">Upewnij się, że procesor jest zgodny z płytą główną. Nowe procesory mogą wymagać aktualizacji BIOS-u.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Architektura:</h2>
+                            <p class="pointDescription">Nowoczesne architektury, takie jak Zen od AMD czy Core od Intel, wprowadzają poprawki w efektywności energetycznej i ogólnej wydajności.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Zastosowanie:</h2>
+                            <p class="pointDescription">Wybierz procesor odpowiedni do planowanych zastosowań. Procesory gamingowe różnią się od tych dedykowanych do profesjonalnych zastosowań graficznych czy programowania.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Technologie Dodatkowe:</h2>
+                            <p class="pointDescription">Sprawdź, czy procesor obsługuje nowoczesne technologie, takie jak Hyper-Threading, SMT (Symmetrical Multi-Threading), czy AMD Ryzen Master.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">GPU Zintegrowane (w przypadku APU):</h2>
+                            <p class="pointDescription">W przypadku procesorów z zintegrowanym układem graficznym (APU), zwróć uwagę na wydajność GPU, jeśli nie planujesz korzystać z karty dedykowanej.</p>
+                        </div>
+                        <div class="point">
+                            <h2 class="point-title">Opinie i Recenzje:</h2>
+                            <p class="pointDescription">Przed zakupem procesora zaleca się nie tylko opinię użytkowników, ale także sprawdzenie wyników benchmarków. Analiza testów wydajności, porównań z innymi modelami oraz recenzji zawierających konkretne dane pozwoli uzyskać kompleksowe i obiektywne spojrzenie na potencjalne osiągnięcia danego procesora. Dzięki temu możesz dokładnie ocenić, czy dany model spełnia Twoje oczekiwania pod względem wydajności w różnych zastosowaniach, od gier po zadania profesjonalne.</p>
+                        </div>
+                    </div>
+
+    Style guide: 2.7
+*/
+
+/*
+
+    categoryPointContainer
+
+    Markup:
+    <div class="sectionContainer">
+                    <h2 class="sectionTitle2">Krótki podział procesorów</h2>
+                    <div class="categoryPointContainer">
+                        <div class="categoryPoint">
+                            <h2 class="point-title">1. Procesory Entry-Level (np. Intel Core i3, Ryzen 3):</h2>
+                            <p class="pointDescription">Zastosowanie ogólne: Doskonałe do codziennych zadań, przeglądania internetu, obsługi multimediów.</p>
+                            <p class="pointDescription">Praca biurowa: Skorzystaj z tych procesorów do standardowych zadań biurowych.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">2. Procesory Średniej Klasy (np. Intel Core i5, Ryzen 5):</h2>
+                            <p class="pointDescription">Zastosowanie ogólne: Odpowiednie do pracy biurowej, multitaskingu i lekkich zastosowań graficznych.</p>
+                            <p class="pointDescription">Gaming: Zapewniają dobrą wydajność w grach, szczególnie przy rozdzielczościach do 1080p.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">3. Procesory Wyższej Klasy (np. Intel Core i7/i9, Ryzen 7/9):</h2>
+                            <p class="pointDescription">Zastosowanie ogólne: Odpowiednie do zaawansowanej pracy biurowej, edycji multimediów, programowania i gier.</p>
+                            <p class="pointDescription">Gaming: Zapewniają doskonałą wydajność w grach, zwłaszcza w rozdzielczościach 1440p i 4K.</p>
+                            <p class="pointDescription">Przy zastosowaniach profesjonalnych: Nadają się do profesjonalnych zastosowań graficznych, takich jak obróbka wideo czy renderowanie grafiki 3D.</p>
+                        </div>
+                        <div class="categoryPoint">
+                            <h2 class="point-title">4. Procesory Wielordzeniowe / Threadripper (np. Ryzen Threadripper):</h2>
+                            <p class="pointDescription">Zastosowania profesjonalne: Idealne do profesjonalnego renderowania grafiki, przetwarzania wideo, pracy z dużymi zestawami danych.</p>
+                            <p class="pointDescription">Zadania wielowątkowe: Zapewniają doskonałą wydajność w zadaniach, które korzystają z wielu rdzeni i wątków.</p>
+                            <p class="pointDescription">Tworzenie i edycja treści: Nadają się do zaawansowanych zastosowań w dziedzinie kreatywności i produkcji treści.</p>
+                        </div>
+                    </div>
+                </div>
+
+    Style guide: 2.8
+
+*/
 *,
 *::before,
 *::after {
@@ -92,7 +372,9 @@ header {
     line-height: 1.07;
     letter-spacing: 0.15rem;
     padding: 1rem;
+    /* Dodałem wypełnienie, aby ramka miała więcej miejsca do zaokrąglenia */
     display: inline-block;
+    /* Element inline-block, aby dopasować się do zawartości */
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid;
@@ -154,8 +436,8 @@ header {
     background-position-x: 50%;
     background-position-y: 40%;
     background-repeat: no-repeat;
-    border-bottom-style: solid; 
-    border-bottom-width: 5px; 
+    border-bottom-style: solid; /* Use border-bottom-style instead of border-style */
+    border-bottom-width: 5px; /* Use border-bottom-width instead of border-width */
     border-image: linear-gradient(90deg, rgb(145, 250, 255) 0%, rgb(27, 202, 255) 39%, rgb(0, 51, 234) 60%, rgb(145, 250, 255) 100%);
     border-image-repeat: round;
     border-image-slice: 1;
@@ -251,8 +533,8 @@ hr{
 
 
 .sectionContainer:hover .sectionTitle2{
-    border-top-style: solid; 
-    border-top-width: 5px; 
+    border-top-style: solid; /* Use border-bottom-style instead of border-style */
+    border-top-width: 5px; /* Use border-bottom-width instead of border-width */
     border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border-image-repeat: round;
     border-image-slice: 1;
@@ -829,8 +1111,8 @@ img{
         background-position-x: 50%;
         background-position-y: 0%;
         background-repeat: no-repeat;
-        border-bottom-style: solid;
-        border-bottom-width: 5px; 
+        border-bottom-style: solid; /* Use border-bottom-style instead of border-style */
+        border-bottom-width: 5px; /* Use border-bottom-width instead of border-width */
         border-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(181,181,181,1) 39%, rgba(0,212,255,1) 60%, rgba(0,0,0,1) 100%);
         border-image-repeat: round;
         border-image-slice: 1;
@@ -848,7 +1130,9 @@ img{
         line-height: 1.07;
         letter-spacing: 0.15rem;
         padding: 1rem;
+        /* Dodałem wypełnienie, aby ramka miała więcej miejsca do zaokrąglenia */
         display: inline-block;
+        /* Element inline-block, aby dopasować się do zawartości */
         overflow: hidden;
         white-space: nowrap;
         border-right: 2px solid;

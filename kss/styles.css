@@ -1,3 +1,213 @@
+/*
+     PCBT - Strona główna
+
+    `<header>` - przechowyje pasek nawigacyjnu oraz jego elementy
+
+    `Sekcja  <section class="hero pcbt-main">` - zawiera konterner z tytułem strony, opis poszczególnych stron oraz stopke
+    
+    `<div class="content" id="site-desc">` - zachowuje opis danej strony
+
+    `<footer>` - zawiera stopke strony oraz link do formularza
+
+    ### Kod - css 
+
+    `<p class="shp-desc">` - zawiera opis strony
+
+    `<div class="points-descr">` - pojemnik na opis strony wraz z animowanym tlem
+
+    `<section class="hero pcbt-main">` - zawiera 
+
+    Style guide: 1
+*/
+
+/*
+    Header
+
+    Markup:
+     <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <span class="line line-top"></span>
+                            <span class="line line-bottom"></span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-bag"></a>
+                    </li>
+                </ul>
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="index.html" class="nav-link nav-link-pcbt"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hardwareSelection.html" class="nav-link nav-link-hardwareselection">Dobór komponentów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partsInstallation.html" class="nav-link nav-link-partsInstallation">Instalacja podzespołów</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="overclocking.html" class="nav-link">Overclocking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="undervolting.html" class="nav-link">Undervolting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="maintenance.html" class="nav-link nav-link-maintenance">Serwisowanie</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    Style guide 1.1
+*/
+
+/*
+    Sekcja hero pcbt-main
+
+    Markup:
+    <section class="hero pcbt-main">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-heading" id="titleheading">PC Building Tips</h2>
+                <div class="subTitleCon">
+                    <div class="animation">
+                      <div class="first"><div>Zbuduj</div></div>
+                      <div class="second"><div>Podkręć</div></div>
+                      <div class="third"><div>Serwisuj</div></div>
+                    </div>
+                    <p>z nami swój komputer.</p>
+                </div>    
+                <p class="short-description">Pigułka wiedzy technicznej strony komputera.</p>
+                <a href="#title-heading2" class="short-link">Dowiedz się więcej. ></a>
+            </div>
+            <div class="content" id="site-desc">
+                <h2 class="title-heading2" id="title-heading2">Dzięki tej stronie dowiesz się jak:</h2>
+                <div class="site-description">
+                    <div class="points-descr">
+                        <h3 class="point-number">1. Dobrać części</h3>
+                        <p class="shp-desc">W sekcji dotyczącej doboru części, skupiamy się na kluczowych aspektach, 
+                            które determinują efektywność i dostosowanie komputera do konkretnych potrzeb. 
+                            Pierwszym istotnym kryterium jest kompatybilność, aby zapewnić płynną współpracę wszystkich elementów. 
+                            W zależności od zastosowania komputera, kierujemy uwagę na specyficzne parametry - na przykład, gry wymagają innych podzespołów niż zadania biurowe. 
+                            Ważne są również wydajność i trwałość elementów, a elastyczność rozbudowy gwarantuje przyszłościową użyteczność.
+                        </p>
+                        <a href="hardwareSelection.html" class="desc-link">Dowiedz się więcej. ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link"></a>
+            </div>
+            <div class="backToTop">
+                <a class="text" href="#titleheading" >Powrót na górę</a>
+            </div>
+        </div>
+    </section>
+
+    Style guide: 1.2
+*/
+
+/*
+    Content
+
+    Markup:
+    <div class="content" id="site-desc">
+                <h2 class="title-heading2" id="title-heading2">Dzięki tej stronie dowiesz się jak:</h2>
+                <div class="site-description">
+                    <div class="points-descr">
+                        <h3 class="point-number">1. Dobrać części</h3>
+                        <p class="shp-desc">W sekcji dotyczącej doboru części, skupiamy się na kluczowych aspektach, 
+                            które determinują efektywność i dostosowanie komputera do konkretnych potrzeb. 
+                            Pierwszym istotnym kryterium jest kompatybilność, aby zapewnić płynną współpracę wszystkich elementów. 
+                            W zależności od zastosowania komputera, kierujemy uwagę na specyficzne parametry - na przykład, gry wymagają innych podzespołów niż zadania biurowe. 
+                            Ważne są również wydajność i trwałość elementów, a elastyczność rozbudowy gwarantuje przyszłościową użyteczność.
+                        </p>
+                        <a href="hardwareSelection.html" class="desc-link">Dowiedz się więcej. ></a>
+                    </div>
+                    <div class="points-descr">
+                        <h3 class="point-number">2. Zainstalować podzespoły</h3>
+                        <p class="shp-desc">
+                            W obszarze montażu komputerowego, koncentrujemy się na kluczowych etapach składania, 
+                            zaczynając od umiejętnego zamontowania płyty głównej i procesora. 
+                            Skupiamy się na precyzyjnych krokach instalacji chłodzenia, 
+                            dbając o efektywne odprowadzanie ciepła. 
+                            Opisujemy również procesy umieszczania pamięci RAM, kart graficznych i dysków, 
+                            przy akcentowaniu ich roli w osiąganiu optymalnej wydajności. 
+                            Dodatkowo, omawiamy praktyczne aspekty związane z zasilaczem, 
+                            gwarantując nie tylko bezpieczeństwo, ale także dostarczanie odpowiedniej mocy dla wszystkich komponentów. 
+                            Ostatecznie, przedstawiamy praktyczne porady dotyczące organizacji kabli, 
+                            dbając o estetyczny wygląd wnętrza obudowy i poprawę przepływu powietrza.
+                        </p>
+                        <a href="partsInstallation.html" class="desc-link">Dowiedz się więcej. ></a>
+                    </div>
+                </div>
+            </div>
+    
+    Style guide: 1.3
+*/
+
+/*
+    footer
+
+    Markup:
+    <footer>
+                <div class="footer">         
+                    <div class="row">
+                        <ul>
+                            <li>
+                                <a>Autor: </a>
+                                <a>Konrad Pluta</a>
+                            </li>
+                            <li>
+                                <a>E-mail:</a>
+                                <a>adres@email.com</a>
+                            </li>
+                            <li>
+                                <a>Numer telefonu:</a> 
+                                <a>+48 123 456 789</a>
+                            </li>
+                            <li>
+                                <a>Zgłoś:</a> 
+                                <a href="form.html">Formularz zgłoszeniowy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        Strona stworzona na potrzeby projektu z przedmiotu: Technologie Internetowe.
+                    </div>
+                </div>
+            </footer>
+
+    Style guide: 1.4
+*/
+
+/*
+    points-descr
+
+    Markup:
+    <div class="points-descr">
+                        <h3 class="point-number">5. Serwisować komputer stacjonarny</h3>
+                        <p class="shp-desc">
+                            Serwisowanie komputera to kluczowy proces utrzymania jego optymalnej wydajności. 
+                            Regularne czyszczenie wnętrza komputera z kurzu i zabrudzeń pozwala na utrzymanie odpowiedniej wentylacji, co przekłada się na stabilną pracę podzespołów. 
+                            Nakładanie świeżej pasty termoprzewodzącej na procesorze zapewnia efektywne odprowadzanie ciepła, co może poprawić chłodzenie i wydajność układu. 
+                            Formatowanie dysku oraz reinstalacja systemu operacyjnego co jakiś czas pozwala pozbyć się zbędnych plików i przywrócić system do pierwotnej wydajności, eliminując ewentualne problemy z oprogramowaniem. 
+                            Regularne serwisowanie komputera nie tylko przedłuża jego żywotność, ale także zapewnia użytkownikowi płynne i efektywne korzystanie z urządzenia.
+                        </p>
+                        <a href="maintenance.html" class="desc-link">Dowiedz się więcej. ></a>
+                    </div>
+
+    Style guide: 1.5
+*/
+
+
 *,
 *::before,
 *::after {
@@ -102,7 +312,7 @@ header {
     text-align: center;
     padding-top: 10.5rem;
     background-color: rgba(15, 0, 0, 0.45);
-
+    /* semi-transparent red */
     backdrop-filter: blur(0.05rem);
     border-radius: 50px;
     background-size: cover;
@@ -114,9 +324,9 @@ header {
     line-height: 1.07;
     letter-spacing: 0.15rem;
     padding: 1rem;
-
+    /* Dodałem wypełnienie, aby ramka miała więcej miejsca do zaokrąglenia */
     display: inline-block;
-
+    /* Element inline-block, aby dopasować się do zawartości */
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid;
@@ -255,8 +465,8 @@ header {
     letter-spacing: 0.15rem;
     padding: 1rem;
     background-color: transparent;
-    border-bottom-style: solid; 
-    border-bottom-width: 5px; 
+    border-bottom-style: solid; /* Use border-bottom-style instead of border-style */
+    border-bottom-width: 5px; /* Use border-bottom-width instead of border-width */
     border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border-image-repeat: round;
     border-image-slice: 1;
@@ -278,7 +488,7 @@ header {
     color: rgb(255, 255, 255, 0.9);
     width: 40%;
     text-align: center;
-
+    /* Dostosuj wartość marginesu według potrzeb */
     margin-top: 5%;
     margin-left: 2%;
     padding-right: 0.5%;
@@ -308,7 +518,7 @@ header {
 
 .point-number {
     flex: 0 0 15%;
-
+    /* Dostosuj szerokość liczby punktu według potrzeb */
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -320,6 +530,7 @@ header {
 
 .shp-desc {
     flex: 0 0 85%;
+    /* Dostosuj szerokość opisu punktu według potrzeb */
     text-align: left;
     padding-left: 5%;
     padding-right: 5%;
@@ -486,8 +697,8 @@ header {
         background-position-x: 50%;
         background-position-y: 70%;
         background-repeat: no-repeat;
-        border-bottom-style: solid; 
-        border-bottom-width: 5px; 
+        border-bottom-style: solid; /* Use border-bottom-style instead of border-style */
+        border-bottom-width: 5px; /* Use border-bottom-width instead of border-width */
         border-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(181,181,181,1) 39%, rgba(0,212,255,1) 60%, rgba(0,0,0,1) 100%);
         border-image-repeat: round;
         border-image-slice: 1;
@@ -510,8 +721,9 @@ header {
         line-height: 1.07;
         letter-spacing: 0.15rem;
         padding: 1rem;
+        /* Dodałem wypełnienie, aby ramka miała więcej miejsca do zaokrąglenia */
         display: inline-block;
-
+        /* Element inline-block, aby dopasować się do zawartości */
         overflow: hidden;
         white-space: nowrap;
         border-right: 2px solid;
@@ -552,6 +764,7 @@ header {
         line-height: 1.07;
         letter-spacing: 0.15rem;
         padding: 1rem;
+        /* Dodałem wypełnienie, aby ramka miała więcej miejsca do zaokrąglenia */
     }
 
 
@@ -561,6 +774,7 @@ header {
         color: rgb(255, 255, 255, 0.9);
         width: 500%;
         text-align: center;
+        /* Dostosuj wartość marginesu według potrzeb */
         margin-top: 5%;
         margin-left: 2%;
         padding-right: 0.5%;
@@ -574,6 +788,7 @@ header {
 
     .shp-desc {
         flex: 0 0 10%;
+        /* Dostosuj szerokość opisu punktu według potrzeb */
         text-align: left;
         padding-left: 5%;
         padding-right: 5%;
@@ -590,6 +805,7 @@ header {
 
     .point-number {
         flex: 0 0 5%;
+        /* Dostosuj szerokość liczby punktu według potrzeb */
         font-weight: bold;
         font-size: 20px;
         text-align: center;
@@ -660,6 +876,7 @@ header {
 
 }
 
+/* CSS */
 .backToTop {
     align-items: center;
     text-align: center;
@@ -712,6 +929,7 @@ header {
     min-width: 196px;
   }
 }
+
 
 footer{
     background: rgba(81, 81, 81, 0.2);

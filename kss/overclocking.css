@@ -1,3 +1,101 @@
+/*
+    Overclocking | Undervolting
+
+    Opis najważniejszych elementów które, nie pojawiły się do tej pory
+
+    `<div class="modal-content">` - pojemnik na treść pop - upu, określa maksymalną szerkość i centruje tekst
+
+    `<div class="circle-container">` - pojemnik na animowane koło, wyświetlanie flex, kierunek kolumnowy oraz centrowanie treści
+
+    ` <div class="pointsContainer">` - pojemnik na punkty, wyświetlanie flex, kierunek kolumnowy
+
+    `<div class="point">` - pojemnik na zawartość punktu, nakłada padding oraz dolną obramówkę w celu rodzielenia punktów
+
+    `<span class="important">` - wyróżnia zawartość treści punktu
+
+    Style guide 4.0
+
+*/
+
+/*
+    modal-content
+
+    Markup:
+    <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Ta sekcja jest dla zaawansowanych użytkowników. Należy ją traktować jako ciekawostkę. Przed przystąpieniem do wspomnianych czynności prosimy o dokładne zgłębienie tematu z innych źródeł! <span class="important">NIE PONOSIMY ODPOWIEDZIALNOŚCI ZA PONIESIONE SZKODY W WYNIKU POWTARZANIA NIŻEJ WYMIENIONYCH CZYNNOŚCI!</span>
+             Przechodząc dalej akceptujesz ryzyko.
+        </p>
+        </div>
+
+    Style guide 4.1
+*/
+
+/*
+    circle-container
+
+    Markup:
+    <div class="circle-container">
+                    <svg>
+                        <circle class="bg" cx="57" cy="57" r="52" />
+                        <circle class="meter-1" cx="57" cy="57" r="52" />
+                        <p class="circ-description">Taktowanie rdzenia</p>
+                        <p class="freq"> MHz</a>
+                    </svg>
+                </div>
+
+*/
+
+/*
+
+    pointsContainer
+
+    Markup:
+    <div class="pointsContainer">
+                <div class="point">
+                    <h2 class="point-title">Oprogramowanie</h2>
+                    <p class="pointDescription">Jeśli chcesz podkręcić swoją kartę graficzną, 
+                        najlepiej wykorzystać do tego aplikację <span class="important">MSI Afterburner</span>. Jest to uniwersalne narzędzie, które działa nie tylko z kartami MSI, ale także z kartami innych producentów. Program wyróżnia się przejrzystym interfejsem i prostą obsługą. Włączenie opcji “Startup” pozwoli załadować zmienione ustawienia już przy starcie systemu.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Jak podkręcać kartę?</h2>
+                    <p class="pointDescription">Podczas podkręcania karty graficznej, zwiększamy częstotliwość taktowania układu graficznego - <span class="important">GPU</span> i pamięci wideo - <span class="important"> VRAM</span>.
+                         Zaleca się zwiększenie częstotliwości taktowania procesora graficznego <span class="important"> o 30-50 MHz i sprawdzenie stabilności wartości </span>. 
+                         Jeśli wartość jest stabilna, można zwiększyć częstotliwość taktowania procesora graficznego o kolejne <span class="important">10-20 MHz</span>, 
+                         aż do uzyskania najwyższej stabilnej wartości.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Power limit</h2>
+                    <p class="pointDescription">Zwiększenie limitu mocy - <span class="important">Power Limit</span> pozwoli poprawić osiągi karty, ale przekłada się na wyższy pobór energii i wyższe temperatury, co wpłynie na głośniejszą pracę chłodzenia. Warto eksperymentować z tym ustawieniem, np. na początek zwiększyć limit mocy o <span class="important">5-10%</span> i sprawdzić jaki ma to wpływ na wydajność/temperaturę. Bardziej zaawansowani użytkownicy mogą także pokusić się o <span class="important">podbicie napięcia</span>, funkcję trzeba jednak odblokować w opcjach - pozycja Unlock voltage control i Unlock voltage monitoring. Podobnie jak w przypadku zwiększenia limitu mocy, wyższe napięcie pozwoli poprawić stabilność, ale wpłynie na wyższy pobór mocy, wyższe temperatury i głośniejszą pracę chłodzenia.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Memory clock</h2>
+                    <p class="pointDescription">Polecamy podnieść taktowanie o <span class="important">50 - 100 MHz</span> i sprawdzić czy przy takiej wartości karta pracuje stabilnie, później można je podniesić w krokach o kolejne 50 MHz.</p>
+                </div>
+                <div class="point">
+                    <h2 class="point-title">Test stabliności</h2>
+                    <p class="pointDescription">Uruchomiony test np. Furmark, pozostawiamy na <span class="important">godzinę lub dłużej</span>, monitorując temperatury w MSI Afterburner, aby nie przekraczały <span class="important">95-100 stopni Celsjusza</span>, powyżej tego limitu karta może "ucinać" zegary oraz obniżać swoją wydajność.
+                        Jeżeli komputer pracuje stabilnie, nie pojawiają się przekłamania w wyświetlanym obrazie, a komputer się nie zawiesza lub nie restartuje, a temperatury mieszczą się w normie, możemy uznać, że uzyskane wartości są stabilne. W przeciwnym wypadku musimy nieco zmniejszyć zegary i/lub podnieść limit mocy.</p>
+                </div>
+            </div>
+
+    Style guide: 4.2
+
+*/
+
+/*
+    point oraz important
+
+    Markup:
+    <div class="point">
+                    <h2 class="point-title">Test stabliności</h2>
+                    <p class="pointDescription">Uruchomiony test np. Furmark, pozostawiamy na <span class="important">godzinę lub dłużej</span>, monitorując temperatury w MSI Afterburner, aby nie przekraczały <span class="important">95-100 stopni Celsjusza</span>, powyżej tego limitu karta może "ucinać" zegary oraz obniżać swoją wydajność.
+                        Jeżeli komputer pracuje stabilnie, nie pojawiają się przekłamania w wyświetlanym obrazie, a komputer się nie zawiesza lub nie restartuje, a temperatury mieszczą się w normie, możemy uznać, że uzyskane wartości są stabilne. W przeciwnym wypadku musimy nieco zmniejszyć zegary i/lub podnieść limit mocy.</p>
+                </div>
+
+    Style guide: 4.3
+*/
+
 *,
 *::before,
 *::after {
@@ -90,7 +188,9 @@ header {
     letter-spacing: 0.15rem;
     padding-bottom: 5px;
     padding-top: 5px;
+    /* Dodałem wypełnienie, aby ramka miała więcej miejsca do zaokrąglenia */
     display: inline-block;
+    /* Element inline-block, aby dopasować się do zawartości */
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid;
@@ -195,8 +295,8 @@ header {
     background-position-x: 50%;
     background-position-y: 40%;
     background-repeat: no-repeat;
-    border-bottom-style: solid; 
-    border-bottom-width: 5px;
+    border-bottom-style: solid; /* Use border-bottom-style instead of border-style */
+    border-bottom-width: 5px; /* Use border-bottom-width instead of border-width */
     border-image: linear-gradient(90deg, rgb(145, 250, 255) 0%, rgb(27, 202, 255) 39%, rgb(0, 51, 234) 60%, rgb(145, 250, 255) 100%);
     border-image-repeat: round;
     border-image-slice: 1;
@@ -561,8 +661,8 @@ h2{
 }
 
 .slideA:hover .sectionTitle{
-    border-top-style: solid;
-    border-top-width: 5px; 
+    border-top-style: solid; /* Use border-bottom-style instead of border-style */
+    border-top-width: 5px; /* Use border-bottom-width instead of border-width */
     border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border-image-repeat: round;
     border-image-slice: 1;
@@ -589,8 +689,8 @@ img{
 }
 
 .sectionContainer:hover .sectionTitle2{
-    border-top-style: solid; 
-    border-top-width: 5px; 
+    border-top-style: solid; /* Use border-bottom-style instead of border-style */
+    border-top-width: 5px; /* Use border-bottom-width instead of border-width */
     border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border-image-repeat: round;
     border-image-slice: 1;
@@ -616,8 +716,8 @@ img{
 
 
 .sectionContainer:hover .sectionTitle2{
-    border-top-style: solid;
-    border-top-width: 5px; 
+    border-top-style: solid; /* Use border-bottom-style instead of border-style */
+    border-top-width: 5px; /* Use border-bottom-width instead of border-width */
     border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border-image-repeat: round;
     border-image-slice: 1;
@@ -712,8 +812,8 @@ iframe{
 }
 
 .slideB:hover .sectionTitle2{
-    border-top-style: solid; 
-    border-top-width: 5px; 
+    border-top-style: solid; /* Use border-bottom-style instead of border-style */
+    border-top-width: 5px; /* Use border-bottom-width instead of border-width */
     border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border-image-repeat: round;
     border-image-slice: 1;
@@ -722,8 +822,8 @@ iframe{
 }
 
 .slideB .sectionContainer:hover .sectionTitle{
-    border-top-style: solid; 
-    border-top-width: 5px; 
+    border-top-style: solid; /* Use border-bottom-style instead of border-style */
+    border-top-width: 5px; /* Use border-bottom-width instead of border-width */
     border-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border-image-repeat: round;
     border-image-slice: 1;
