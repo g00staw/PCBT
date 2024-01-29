@@ -63,22 +63,46 @@
       </div>
       <!-- JavaScript -->
       <script>
-          var modal = document.getElementById("myModal");
-          var span = document.getElementsByClassName("close")[0];
-
-          window.onload = function() {
-            modal.style.display = "block";
-          }
-
-          span.onclick = function() {
-            modal.style.display = "none";
-          }
-
-          window.onclick = function(event) {
-            if (event.target == modal) {
+          /**
+             * Modal Dialog Script
+             * 
+             * Ten skrypt obsługuje wyświetlanie i ukrywanie modala.
+             */
+                
+            /**
+             * Pobiera modal i przycisk zamykania modalu.
+             */
+            var modal = document.getElementById("myModal");
+            var span = document.getElementsByClassName("close")[0];
+                
+            /**
+             * Wyświetla modal po załadowaniu strony.
+             * 
+             * Wykorzystuje zdarzenie 'onload' do wywołania funkcji po załadowaniu strony.
+             */
+            window.onload = function() {
+              modal.style.display = "block";
+            }
+            
+            /**
+             * Ukrywa modal po kliknięciu w przycisk zamykania.
+             * 
+             * Wykorzystuje zdarzenie 'onclick' do wywołania funkcji po kliknięciu.
+             */
+            span.onclick = function() {
               modal.style.display = "none";
             }
-          }
+            
+            /**
+             * Ukrywa modal po kliknięciu poza obszarem modalu.
+             * 
+             * Wykorzystuje zdarzenie 'onclick' do wywołania funkcji po kliknięciu.
+             */
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
       </script>
     <script src="main.js"></script>
     <div class="back-to-top-scroll-button"><a href="#titleheading">▲</a></div>
